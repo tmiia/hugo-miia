@@ -1,0 +1,75 @@
+.hero-banner{
+  display: flex;
+  .left{
+    flex: 2;
+    ul{
+      margin: 1rem 0;
+      li{
+        display: table-cell;
+        a:first-of-type{
+          margin-left: 0;
+        }
+        a{
+          margin: 0 1rem;
+          img{
+            width: 1.2rem;
+          }
+        }
+      }
+    }
+    h1{
+      font-size: 4rem;
+      font-weight: 600;
+    }
+    #colored-name{
+      font-size: 6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      @supports (background-clip:text) or (-webkit-background-clip:text) {
+        color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(90deg, rgba(116,214,245,1) 0%, rgba(212,116,245,1) 100%);
+      }
+    }
+    p{
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.4rem;
+      width: 90%;
+      opacity: 0.9;
+      margin-bottom: 1.2rem;
+      margin-top: 0.5rem;
+    }
+  }
+  .right{
+    flex: 3;
+
+    .shaded-bg{
+      position: relative;
+      height: 32rem;
+      width: 100%;
+      border-radius: $radius;
+      background: rgb(116,214,245);
+      background: linear-gradient(90deg, rgba(116,214,245,1) 0%, rgba(212,116,245,1) 100%);
+      .white-mask{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: $radius;
+        background-color: white;
+        opacity: 0.15;
+        filter: blur(1rem);
+      }
+      #memoji{
+        position: absolute;
+        left: 50%;
+        bottom: -20%;
+        transform: translateX(-50%);
+
+      }
+    }
+  }
+}

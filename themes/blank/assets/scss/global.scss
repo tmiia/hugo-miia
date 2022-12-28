@@ -1,0 +1,30 @@
+body{
+  background-color: $dark-blue;
+  min-height: 100vh;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+  color: $white;
+  font-family: $text-font;
+}
+
+.wrapper{
+  margin: $wrapper;
+  margin-bottom: 0;
+}
+
+.btn{
+  background-color: $blue;
+  border: none;
+  border-radius: $radius;
+  padding: 0.6rem 2rem;
+  color: $white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: .3s;
+  &:hover{
+    background-color: $white;
+    color: $blue;
+  }
+}

@@ -1,0 +1,24 @@
+{{  $memoji := resources.Get "/media/memoji.svg" }}
+{{  $linkedin := resources.Get "/media/logos/linkedin.svg" }}
+{{  $behance := resources.Get "/media/logos/behance.svg" }}
+{{  $github := resources.Get "/media/logos/github.svg" }}
+<div class="hero-banner">
+  <div class="left">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/nehemia-telusma/"><img src="{{ $linkedin.Permalink }}" alt=""></a></li>
+      <li><a href="https://www.behance.net/nehmiatelusma"><img src="{{ $behance.Permalink }}" alt=""></a></i></li>
+      <li><a href="https://github.com/tmiia"><img src="{{ $github.Permalink }}" alt=""></a></li>
+    </ul>
+    <h1>Nehémia<br><span id="colored-name">Telusma</span></h1>
+    <p>Développeuse Front-End, encore étudiante à l’IUT Bordeaux Montaigne et à la recherche d’une alternance ! </p>
+    <button class="btn">Recrutez moi</button>
+  </div>
+  <div class="right">
+    <div class="shaded-bg">
+      <div class="white-mask">
+
+      </div>
+      <img id="memoji" src="{{ $memoji.Permalink }}" alt="">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+      <div class="wrapper">
+        {{- partial "header.html" . -}}
+        {{- partial "hero-banner.html" . -}}
+        {{- partial "cv.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "contact.html" . -}}
+        {{- partial "footer.html" . -}}
+      </div>
+    </body>
+</html>
