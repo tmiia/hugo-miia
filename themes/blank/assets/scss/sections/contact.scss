@@ -48,3 +48,16 @@
   }
 
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .contact{
+    position: relative;
+    #memoji2{
+      position: absolute;
+      top: 50%;
+      right: -40px;
+      transform: translateY(-50%);
+      width: 20rem;
+    }
+  }
+ }

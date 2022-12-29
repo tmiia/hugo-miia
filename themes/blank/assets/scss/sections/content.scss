@@ -32,25 +32,52 @@
 
 .projects{
   display: flex;
+  justify-content: space-between;
   margin-top: 3rem;
   .project__card:first-of-type{
     margin-left: 0;
-    width: 27rem;
+    // width: 27rem;
+    flex: 3;
   }
+  .project__card:last-child{
+    margin-right: 0;
+  }
+  &:hover > .project__card{
+    flex: 1;
+  }
+
+  & .project__card:hover {
+    flex: 3;
+  }
+
   .project__card{
+    flex: 1;
     min-height: 15rem;
-    width: 7rem;
+    // width: 7rem;
     background-color: $white;
     border-radius: $radius;
     padding: 1rem;
     margin: 0 1rem;
-
-    &:hover{
-      width: 27rem;
-    }
 
     p, h1, h2, h3, span, strong{
       color: $dark-blue;
     }
   }
 }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .card{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    #arrow{
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 7rem;
+    }
+  }
+ }

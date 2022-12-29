@@ -1,6 +1,7 @@
 body{
   background-color: $dark-blue;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 p, h1, h2, h3, h4, h5, h6, span, li {
@@ -44,3 +45,37 @@ p, h1, h2, h3, h4, h5, h6, span, li {
     }
   }
 }
+
+footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $darkest-blue;
+  min-height: 12rem;
+  margin-top: 6rem;
+
+  img{
+    width: 4rem;
+  }
+  span{
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
+    color: rgba(94, 120, 150, 0.7);
+  }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .socials{
+    li{
+      a{
+        img, svg{
+          width: 2rem;
+        }
+      }
+    }
+  }
+ }
