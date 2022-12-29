@@ -1,0 +1,38 @@
+.cv-container{
+  display: flex;
+  justify-content: end;
+  .cv{
+    display: flex;
+    margin-top: 6rem;
+    max-width: 40rem;
+    overflow-x: scroll;
+    transform: translateX($wrapper);
+    border-end-start-radius: $radius;
+    border-start-start-radius: $radius;
+
+    .cv__item{
+      background-color: $white;
+      border-radius: $radius;
+      padding: 1rem;
+      min-height: 12.5rem;
+      max-width: 12rem;
+      min-width: 12rem;
+      margin: 0 0.5rem;
+
+      h3{
+        color: $darkest-blue;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      li:first-of-type{
+        margin: 0;
+      }
+      li{
+        color: $dark-blue;
+        opacity: 0.7;
+        margin-top: 0.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

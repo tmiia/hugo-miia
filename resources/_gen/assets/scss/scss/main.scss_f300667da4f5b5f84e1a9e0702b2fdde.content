@@ -44,12 +44,12 @@ body {
   background-color: #051932;
   min-height: 100vh; }
 
-p, h1, h2, h3, h4, h5, h6, span {
+p, h1, h2, h3, h4, h5, h6, span, li {
   color: #FFFFFF;
   font-family: ".SF Compact", sans-serif; }
 
 .wrapper {
-  margin: 70px;
+  margin: 120px;
   margin-bottom: 0; }
 
 .btn {
@@ -66,20 +66,21 @@ p, h1, h2, h3, h4, h5, h6, span {
     background-color: #FFFFFF;
     color: #31A8FF; }
 
+.socials {
+  margin: 1rem 0; }
+  .socials li {
+    display: table-cell; }
+    .socials li a:first-of-type {
+      margin-left: 0; }
+    .socials li a {
+      margin: 0 1rem; }
+      .socials li a img, .socials li a svg {
+        width: 1.2rem; }
+
 .hero-banner {
   display: flex; }
   .hero-banner .left {
     flex: 2; }
-    .hero-banner .left ul {
-      margin: 1rem 0; }
-      .hero-banner .left ul li {
-        display: table-cell; }
-        .hero-banner .left ul li a:first-of-type {
-          margin-left: 0; }
-        .hero-banner .left ul li a {
-          margin: 0 1rem; }
-          .hero-banner .left ul li a img {
-            width: 1.2rem; }
     .hero-banner .left h1 {
       font-size: 4rem;
       font-weight: 600; }
@@ -125,3 +126,123 @@ p, h1, h2, h3, h4, h5, h6, span {
         left: 50%;
         bottom: -20%;
         transform: translateX(-50%); }
+
+.cv-container {
+  display: flex;
+  justify-content: end; }
+  .cv-container .cv {
+    display: flex;
+    margin-top: 6rem;
+    max-width: 40rem;
+    overflow-x: scroll;
+    transform: translateX(120px);
+    border-end-start-radius: 10px;
+    border-start-start-radius: 10px; }
+    .cv-container .cv .cv__item {
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      padding: 1rem;
+      min-height: 12.5rem;
+      max-width: 12rem;
+      min-width: 12rem;
+      margin: 0 0.5rem; }
+      .cv-container .cv .cv__item h3 {
+        color: #031123;
+        font-weight: 600;
+        margin-bottom: 0.5rem; }
+      .cv-container .cv .cv__item li:first-of-type {
+        margin: 0; }
+      .cv-container .cv .cv__item li {
+        color: #051932;
+        opacity: 0.7;
+        margin-top: 0.5rem;
+        font-weight: 500; }
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(116, 214, 245, 0.76);
+  border-radius: 10px;
+  margin-top: 6rem;
+  min-height: 16rem;
+  padding-right: 6rem; }
+  .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .card #logo {
+    width: 2rem;
+    margin-bottom: 1rem; }
+  .card #arrow {
+    position: absolute;
+    top: -15px;
+    left: 5rem; }
+  .card h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+
+.projects {
+  display: flex;
+  margin-top: 3rem; }
+  .projects .project__card:first-of-type {
+    margin-left: 0;
+    width: 27rem; }
+  .projects .project__card {
+    min-height: 15rem;
+    width: 7rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 1rem; }
+    .projects .project__card:hover {
+      width: 27rem; }
+    .projects .project__card p, .projects .project__card h1, .projects .project__card h2, .projects .project__card h3, .projects .project__card span, .projects .project__card strong {
+      color: #051932; }
+
+.contact {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 6rem;
+  padding: 3rem 0 3rem 5rem; }
+  .contact h3 {
+    color: #051932;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .contact svg {
+    fill: #31A8FF; }
+  .contact .mailto {
+    display: flex;
+    align-items: center;
+    max-width: 21rem;
+    background-color: rgba(49, 168, 255, 0.31);
+    padding: 0.6rem 1rem;
+    border-radius: 10px; }
+    .contact .mailto svg {
+      width: 1.2rem;
+      margin-right: 1rem; }
+    .contact .mailto span {
+      color: #5e7896;
+      font-style: italic;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Old versions of Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */ }
+  .contact #memoji2 {
+    position: absolute;
+    top: -50%;
+    right: 8rem; }

@@ -1,0 +1,50 @@
+.contact{
+  position: relative;
+  background-color: $white;
+  border-radius: $radius;
+  margin-top: 6rem;
+  padding: 3rem 0 3rem 5rem;
+
+  h3{
+    color: $dark-blue;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  svg{
+    fill: $blue;
+  }
+
+  .mailto{
+    display: flex;
+    align-items: center;
+    max-width: 21rem;
+    background-color: rgba(49, 168, 255, 0.31);
+    padding: 0.6rem 1rem;
+    border-radius: $radius;
+
+    svg{
+      width: 1.2rem;
+      margin-right: 1rem;
+    }
+
+    span{
+      color: rgba(94, 120, 150, 1);
+      font-style: italic;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    }
+  }
+
+  #memoji2{
+    position: absolute;
+    top: -50%;
+    right: 8rem;
+  }
+
+}

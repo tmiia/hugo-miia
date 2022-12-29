@@ -2,21 +2,6 @@
   display: flex;
   .left{
     flex: 2;
-    ul{
-      margin: 1rem 0;
-      li{
-        display: table-cell;
-        a:first-of-type{
-          margin-left: 0;
-        }
-        a{
-          margin: 0 1rem;
-          img{
-            width: 1.2rem;
-          }
-        }
-      }
-    }
     h1{
       font-size: 4rem;
       font-weight: 600;

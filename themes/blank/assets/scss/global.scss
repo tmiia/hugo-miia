@@ -3,7 +3,7 @@ body{
   min-height: 100vh;
 }
 
-p, h1, h2, h3, h4, h5, h6, span {
+p, h1, h2, h3, h4, h5, h6, span, li {
   color: $white;
   font-family: $text-font;
 }
@@ -26,5 +26,21 @@ p, h1, h2, h3, h4, h5, h6, span {
   &:hover{
     background-color: $white;
     color: $blue;
+  }
+}
+
+.socials{
+  margin: 1rem 0;
+  li{
+    display: table-cell;
+    a:first-of-type{
+      margin-left: 0;
+    }
+    a{
+      margin: 0 1rem;
+      img, svg{
+        width: 1.2rem;
+      }
+    }
   }
 }

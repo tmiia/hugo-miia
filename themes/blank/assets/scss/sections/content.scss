@@ -1,0 +1,56 @@
+.card{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  background-color: $light-blue;
+  border-radius: $radius;
+  margin-top: 6rem;
+  min-height: 16rem;
+  padding-right: 6rem;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo{
+    width: 2rem;
+    margin-bottom: 1rem;
+  }
+  #arrow{
+    position: absolute;
+    top: -15px;
+    left: 5rem;
+  }
+  h3{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.projects{
+  display: flex;
+  margin-top: 3rem;
+  .project__card:first-of-type{
+    margin-left: 0;
+    width: 27rem;
+  }
+  .project__card{
+    min-height: 15rem;
+    width: 7rem;
+    background-color: $white;
+    border-radius: $radius;
+    padding: 1rem;
+    margin: 0 1rem;
+
+    &:hover{
+      width: 27rem;
+    }
+
+    p, h1, h2, h3, span, strong{
+      color: $dark-blue;
+    }
+  }
+}

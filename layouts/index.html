@@ -1,3 +1,29 @@
 {{ define "main" }}
-  {{ .Content }}
+{{  $arrow := resources.Get "/media/big-arrow.svg" }}
+{{  $logo := resources.Get "/media/logo.svg" }}
+
+{{- partial "hero-banner.html" . -}}
+{{- partial "cv.html" . -}}
+
+  <div class="card">
+    <img id="arrow" src="{{ $arrow.Permalink }}" alt="">
+    <div>
+      <img id="logo" src="{{ $logo.Permalink }}" alt="">
+      <h3>Découvrez mes<br>
+        réalisations !</h3>
+    </div>
+  </div>
+
+  <div class="projects">
+    {{range .Site.RegularPages}}
+    <div class="project__card">
+      <a href="{{.Permalink}}">{{.Title}}</a>
+      <p> {{ .Content }} </p>
+    </div>
+    {{end}}
+  </div>
+
+
+  {{- partial "contact.html" . -}}
+
 {{ end }}
