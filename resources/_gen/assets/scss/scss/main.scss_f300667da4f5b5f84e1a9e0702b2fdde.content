@@ -79,8 +79,10 @@ p, h1, h2, h3, h4, h5, h6, span, li {
         width: 1.2rem; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .socials li a img, .socials li a svg {
-    width: 2.4rem; }
+  .socials li a {
+    margin: 0 1.9rem; }
+    .socials li a img, .socials li a svg {
+      width: 2.4rem; }
   .btn {
     font-size: 2.2rem; }
   .header__logo {
@@ -316,7 +318,7 @@ p, h1, h2, h3, h4, h5, h6, span, li {
     display: flex;
     flex-direction: column; }
     .projects .project__card {
-      margin: 1rem 0;
+      margin: 1.5rem 0;
       min-height: 23rem; } }
 
 .contact {
