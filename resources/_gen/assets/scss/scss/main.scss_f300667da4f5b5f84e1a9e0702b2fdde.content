@@ -45,9 +45,12 @@ body {
   min-height: 100vh;
   overflow-x: hidden; }
 
-p, h1, h2, h3, h4, h5, h6, span, li {
+p, h1, h2, h3, h4, h5, h6, span, li, a {
   color: #FFFFFF;
   font-family: ".SF Compact", sans-serif; }
+
+a {
+  text-decoration: none; }
 
 .wrapper {
   margin: 0 120px; }
@@ -408,6 +411,12 @@ footer {
 .single {
   display: flex;
   flex-direction: column; }
+  .single .fil-ariane {
+    font-weight: 600;
+    margin-bottom: 2rem; }
+    .single .fil-ariane a {
+      font-weight: 400;
+      font-style: italic; }
   .single .single__content {
     display: flex; }
     .single .single__content .single__left {
@@ -457,5 +466,4 @@ footer {
     width: 100%; }
     .single .single__navigation a {
       font-family: ".SF Compact", sans-serif;
-      color: #FFFFFF;
-      text-decoration: none; }
+      color: #FFFFFF; }

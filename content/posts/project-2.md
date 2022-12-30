@@ -3,6 +3,7 @@ title: "Refonte de site • Accor Arena"
 date: 2022-12-29T02:54:22+01:00
 draft: false
 featured_image: "/projects/project-2.webp"
+slug: "Accor-Arena"
 hard_tools: [
   "html",
   "css",

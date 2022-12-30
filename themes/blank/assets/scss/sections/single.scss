@@ -1,6 +1,15 @@
 .single{
   display: flex;
   flex-direction: column;
+
+  .fil-ariane{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    a{
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
   .single__content{
     display: flex;
     .single__left{
@@ -66,7 +75,6 @@
     a{
       font-family: $text-font;
       color: $white;
-      text-decoration: none;
     }
   }
 }

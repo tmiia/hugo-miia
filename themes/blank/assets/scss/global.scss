@@ -4,9 +4,13 @@ body{
   overflow-x: hidden;
 }
 
-p, h1, h2, h3, h4, h5, h6, span, li {
+p, h1, h2, h3, h4, h5, h6, span, li, a{
   color: $white;
   font-family: $text-font;
+}
+
+a{
+  text-decoration: none;
 }
 
 .wrapper{
