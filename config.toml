@@ -2,3 +2,7 @@ baseURL = ''
 languageCode = 'fr-FR'
 title = 'Portfolio'
 theme = 'blank'
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true

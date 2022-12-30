@@ -78,26 +78,12 @@ p, h1, h2, h3, h4, h5, h6, span, li {
       .socials li a img, .socials li a svg {
         width: 1.2rem; }
 
-footer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #031123;
-  min-height: 12rem;
-  margin-top: 6rem; }
-  footer img {
-    width: 4rem; }
-  footer span {
-    position: absolute;
-    bottom: 10px;
-    font-size: 0.8rem;
-    color: rgba(94, 120, 150, 0.7); }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .socials li a img, .socials li a svg {
-    width: 2rem; } }
+    width: 2rem; }
+  .header__logo {
+    width: 3rem;
+    margin-bottom: 1rem; } }
 
 .hero-banner {
   display: flex; }
@@ -243,24 +229,58 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem; }
+  .projects .project__mask {
+    background-color: rgba(10, 15, 20, 0.73);
+    transition: .3s; }
   .projects .project__card:first-of-type {
     margin-left: 0;
     flex: 3; }
+  .projects .project__card:first-of-type > .project__mask {
+    background-color: rgba(10, 15, 20, 0.053); }
   .projects .project__card:last-child {
     margin-right: 0; }
   .projects:hover > .project__card {
     flex: 1; }
   .projects .project__card:hover {
     flex: 3; }
+  .projects:hover > .project__card > .project__mask {
+    background-color: rgba(10, 15, 20, 0.73); }
+  .projects .project__card > a:hover ~ .project__mask {
+    background-color: rgba(10, 15, 20, 0.053); }
   .projects .project__card {
+    position: relative;
     flex: 1;
     min-height: 15rem;
     background-color: #FFFFFF;
+    background-size: cover;
     border-radius: 10px;
     padding: 1rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    transition: .3s; }
     .projects .project__card p, .projects .project__card h1, .projects .project__card h2, .projects .project__card h3, .projects .project__card span, .projects .project__card strong {
       color: #051932; }
+    .projects .project__card a {
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .projects .project__card .project__mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px; }
+    .projects .project__card .project-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      border-radius: 10px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .card {
@@ -291,7 +311,7 @@ footer {
   .contact .mailto {
     display: flex;
     align-items: center;
-    max-width: 21rem;
+    width: fit-content;
     background-color: rgba(49, 168, 255, 0.31);
     padding: 0.6rem 1rem;
     border-radius: 10px; }
@@ -322,9 +342,32 @@ footer {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .contact {
     position: relative; }
+    .contact .mailto {
+      max-width: fit-content;
+      font-size: 1.6rem; }
+      .contact .mailto svg {
+        width: 2rem; }
     .contact #memoji2 {
       position: absolute;
       top: 50%;
-      right: -40px;
+      right: -10%;
       transform: translateY(-50%);
       width: 20rem; } }
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #031123;
+  min-height: 12rem;
+  width: 100%;
+  margin-top: 6rem; }
+  footer img {
+    width: 4rem; }
+  footer span {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
+    color: rgba(94, 120, 150, 0.7); }

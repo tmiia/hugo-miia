@@ -34,14 +34,23 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+
+
+  .project__mask{
+    background-color: rgba(10, 15, 20, 0.73);
+    transition: .3s;
+  }
   .project__card:first-of-type{
     margin-left: 0;
-    // width: 27rem;
     flex: 3;
+  }
+  .project__card:first-of-type > .project__mask{
+    background-color: rgba(10, 15, 20, 0.053);
   }
   .project__card:last-child{
     margin-right: 0;
   }
+
   &:hover > .project__card{
     flex: 1;
   }
@@ -50,20 +59,60 @@
     flex: 3;
   }
 
+  &:hover > .project__card > .project__mask{
+    background-color: rgba(10, 15, 20, 0.73);
+  }
+
+  & .project__card > a:hover ~ .project__mask {
+    background-color: rgba(10, 15, 20, 0.053);
+  }
+
   .project__card{
+    position: relative;
     flex: 1;
     min-height: 15rem;
-    // width: 7rem;
     background-color: $white;
+    background-size: cover;
     border-radius: $radius;
     padding: 1rem;
     margin: 0 1rem;
+    transition: .3s;
 
     p, h1, h2, h3, span, strong{
       color: $dark-blue;
     }
+
+    a{
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project__mask{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: $radius;
+    }
+
+    .project-img img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      border-radius: $radius;
+    }
+
   }
 }
+
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

@@ -18,7 +18,7 @@
   .mailto{
     display: flex;
     align-items: center;
-    max-width: 21rem;
+    width: fit-content;
     background-color: rgba(49, 168, 255, 0.31);
     padding: 0.6rem 1rem;
     border-radius: $radius;
@@ -52,10 +52,19 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .contact{
     position: relative;
+
+    .mailto{
+      max-width: fit-content;
+      font-size: 1.6rem;
+      svg{
+        width: 2rem;
+      }
+    }
+
     #memoji2{
       position: absolute;
       top: 50%;
-      right: -40px;
+      right: -10%;
       transform: translateY(-50%);
       width: 20rem;
     }

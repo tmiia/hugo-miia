@@ -17,9 +17,9 @@
 
   <div class="projects">
     {{range .Site.RegularPages}}
-    <div class="project__card">
-      <a href="{{.Permalink}}">{{.Title}}</a>
-      <p> {{ .Content }} </p>
+    <div class="project__card" style="background-image: url('{{ .Params.featured_image }}')">
+      <a href="{{.Permalink}}"></a>
+      <div class="project__mask"></div>
     </div>
     {{end}}
   </div>
