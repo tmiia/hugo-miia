@@ -51,22 +51,30 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .contact{
+    padding: 20rem 3rem 3rem 3rem;
     position: relative;
 
-    .mailto{
-      max-width: fit-content;
-      font-size: 1.6rem;
-      svg{
-        width: 2rem;
+    .contact__content{
+      align-self: flex-start;
+      h3{
+        font-size: 4rem;
+      }
+      .mailto{
+        max-width: fit-content;
+        font-size: 2rem;
+        svg{
+          width: 2rem;
+        }
       }
     }
 
     #memoji2{
       position: absolute;
-      top: 50%;
-      right: -10%;
-      transform: translateY(-50%);
-      width: 20rem;
+      top: -8rem;
+      left: 53%;
+      transform: translateX(-50%);
+      width: 32rem;
+      // width: 20rem;
     }
   }
  }

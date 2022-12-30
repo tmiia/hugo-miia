@@ -66,6 +66,12 @@
     flex-direction: column;
     margin-bottom: 0;
     .left{
+      h1{
+        font-size: 5rem;
+      }
+      #colored-name{
+        font-size: 7rem;
+      }
       p{
         font-size: 1.9rem;
         line-height: 2.3rem;

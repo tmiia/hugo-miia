@@ -80,9 +80,9 @@ p, h1, h2, h3, h4, h5, h6, span, li {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .socials li a img, .socials li a svg {
-    width: 2rem; }
+    width: 2.4rem; }
   .btn {
-    font-size: 1.8rem; }
+    font-size: 2.2rem; }
   .header__logo {
     width: 3rem;
     margin-bottom: 1rem; } }
@@ -142,6 +142,10 @@ p, h1, h2, h3, h4, h5, h6, span, li {
     display: flex;
     flex-direction: column;
     margin-bottom: 0; }
+    .hero-banner .left h1 {
+      font-size: 5rem; }
+    .hero-banner .left #colored-name {
+      font-size: 7rem; }
     .hero-banner .left p {
       font-size: 1.9rem;
       line-height: 2.3rem; }
@@ -361,18 +365,23 @@ p, h1, h2, h3, h4, h5, h6, span, li {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .contact {
+    padding: 20rem 3rem 3rem 3rem;
     position: relative; }
-    .contact .mailto {
-      max-width: fit-content;
-      font-size: 1.6rem; }
-      .contact .mailto svg {
-        width: 2rem; }
+    .contact .contact__content {
+      align-self: flex-start; }
+      .contact .contact__content h3 {
+        font-size: 4rem; }
+      .contact .contact__content .mailto {
+        max-width: fit-content;
+        font-size: 2rem; }
+        .contact .contact__content .mailto svg {
+          width: 2rem; }
     .contact #memoji2 {
       position: absolute;
-      top: 50%;
-      right: -10%;
-      transform: translateY(-50%);
-      width: 20rem; } }
+      top: -8rem;
+      left: 53%;
+      transform: translateX(-50%);
+      width: 32rem; } }
 
 footer {
   position: relative;
