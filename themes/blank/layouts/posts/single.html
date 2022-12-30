@@ -5,27 +5,43 @@
       <div class="wrapper">
         {{- partial "header.html" . -}}
         {{- block "main" . }}
+
         <section class="single">
-          <div class="single__left">
-            <h1 class="single__title">{{.Title}}</h1>
-            <p class="single__description">
-              {{.Content}}
-            </p>
+          <div class="single__content">
+            <div class="single__left">
+              <h1 class="single__title">{{.Title}}</h1>
+              <p class="single__description">
+                {{.Content}}
+              </p>
+            </div>
+            <div class="single__right">
+              <img src="{{ .Params.featured_image }}" alt="">
+              <div class="single__tools">
+                <div class="single__hard-tools">
+                  {{ range $index, $tools := .Params.hard_tools}}
+                    <img src="/tools/{{$tools}}.svg" alt="">
+                  {{ end }}
+                </div>
+                <hr>
+                <div class="single__manage-tools">
+                  {{ range $index, $tools := .Params.manage_tools}}
+                    <img src="/tools/{{$tools}}.svg" alt="">
+                  {{ end }}
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="single__right">
-            <img src="{{ .Params.featured_image }}" alt="">
-            <div class="single__tools">
-              <div class="single__hard-tools">
-                {{ range $index, $tools := .Params.hard_tools}}
-                  <img src="/tools/{{$tools}}.svg" alt="">
-                {{ end }}
-              </div>
-              <hr>
-              <div class="single__manage-tools">
-                {{ range $index, $tools := .Params.manage_tools}}
-                  <img src="/tools/{{$tools}}.svg" alt="">
-                {{ end }}
-              </div>
+          <div class="single__navigation">
+            <div class="next-post">
+              {{ if .NextPage }}
+              <a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">«- {{ .NextPage.Title | truncate 50 "..." }}</a>
+              {{ end }}
+            </div>
+
+            <div class="previous-post">
+              {{ if .PrevPage }}
+              <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} -»</a>
+              {{ end }}
             </div>
           </div>
         </section>
