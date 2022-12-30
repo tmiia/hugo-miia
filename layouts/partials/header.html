@@ -1,2 +1,4 @@
-{{  $logo := resources.Get "/media/logo.svg" }}
-<img class="header__logo" src="{{ $logo.Permalink }}" alt="">
+<header>
+  {{  $logo := resources.Get "/media/logo.svg" }}
+  <img class="header__logo" src="{{ $logo.Permalink }}" alt="">
+</header>

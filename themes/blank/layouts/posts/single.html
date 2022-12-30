@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+      <div class="wrapper">
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}
+        <section class="single">
+          <div class="single__left">
+            <h1 class="single__title">{{.Title}}</h1>
+            <p class="single__description">
+              {{.Content}}
+            </p>
+          </div>
+          <div class="single__right">
+            <img src="{{ .Params.featured_image }}" alt="">
+            <div class="single__tools">
+              <div class="single__hard-tools">
+                {{ range $index, $tools := .Params.hard_tools}}
+                  <img src="/tools/{{$tools}}.svg" alt="">
+                {{ end }}
+              </div>
+              <hr>
+              <div class="single__manage-tools">
+                {{ range $index, $tools := .Params.manage_tools}}
+                  <img src="/tools/{{$tools}}.svg" alt="">
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </section>
+        {{- end }}
+      </div>
+    </body>
+</html>
