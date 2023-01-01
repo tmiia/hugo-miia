@@ -120,7 +120,7 @@ header {
       line-height: 1.4rem;
       width: 90%;
       opacity: 0.9;
-      margin-bottom: 1.2rem;
+      margin-bottom: 2rem;
       margin-top: 0.5rem; }
   .hero-banner .right {
     flex: 3; }
