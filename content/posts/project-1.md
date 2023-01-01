@@ -3,6 +3,7 @@ title: "Intégration de maquette • MNTN"
 date: 2022-12-29T01:57:53+01:00
 draft: false
 featured_image: "/projects/project-1.webp"
+project_link: "https://mntn-telusma.netlify.app/"
 slug: "MNTN"
 hard_tools: [
   "html",

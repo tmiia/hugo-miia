@@ -16,7 +16,9 @@
               </p>
             </div>
             <div class="single__right">
-              <img src="{{ .Params.featured_image }}" alt="">
+              <a href="{{ .Params.project_link }}" target="_blank">
+                <img src="{{ .Params.featured_image }}" alt="">
+              </a>
               <div class="single__tools">
                 <div class="single__hard-tools">
                   {{ range $index, $tools := .Params.hard_tools}}

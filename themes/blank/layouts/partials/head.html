@@ -1,5 +1,6 @@
 <head>
   {{ $styles := resources.Get "/scss/main.scss" | toCSS }}
     <script src="https://kit.fontawesome.com/5ab4441cb0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ $styles.Permalink }}">
 </head>
