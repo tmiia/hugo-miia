@@ -3,7 +3,7 @@ title: "Galerie • Immaculeé"
 date: 2022-12-29T02:57:43+01:00
 draft: false
 featured_image: "/projects/project-4.webp"
-project_link: "#"
+project_link: "https://galerie-immaculee.netlify.app/"
 slug: "Immaculee"
 hard_tools: [
   "html",
