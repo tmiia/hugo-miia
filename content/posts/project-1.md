@@ -12,5 +12,8 @@ manage_tools: [
 ]
 ---
 
-Pour progresser il faut s'entrainer. C'est pour cela que j'intègre des maquettes. Cela me permet de m'améliorer en dévelopement Front-End.
+Avec cette page web, j'ai décidé de mettre à l'épreuve mes compétences en développement Front-End en réalisant une homepage en HTML et SCSS en seulement 2 heures. Pour me challenger encore plus, j'ai choisi de reproduire une maquette trouvée en ligne le plus fidèlement possible.
+{.single__description}
+
+Ce projet m'a permis de mettre en pratique mes connaissances en HTML et SCSS, ainsi que de développer ma capacité à travailler sous pression et à respecter un cahier des charges précis.
 {.single__description}

@@ -473,7 +473,7 @@ footer {
   .single .single__navigation {
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin: 3rem 0 2rem 0;
     width: 100%; }
     .single .single__navigation a {
       font-family: ".SF Compact", sans-serif;
