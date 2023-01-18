@@ -438,7 +438,7 @@ header {
     top: -50%;
     right: 8rem; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 950px) {
   .contact {
     padding: 20rem 3rem 3rem 3rem;
     position: relative; }
@@ -449,6 +449,8 @@ header {
       .contact .contact__content .mailto {
         max-width: fit-content;
         font-size: 2rem; }
+        .contact .contact__content .mailto span {
+          font-size: 1rem; }
         .contact .contact__content .mailto svg {
           width: 2rem; }
     .contact #memoji2 {
@@ -460,7 +462,23 @@ header {
 
 @media only screen and (max-width: 680px) {
   .contact {
-    display: none; } }
+    margin-top: 4rem;
+    padding: 3rem;
+    position: relative; }
+    .contact .contact__content {
+      align-self: flex-start; }
+      .contact .contact__content h3 {
+        font-size: 2rem; }
+      .contact .contact__content .mailto {
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 0; }
+        .contact .contact__content .mailto span {
+          display: none; }
+        .contact .contact__content .mailto svg {
+          width: 2rem; }
+    .contact #memoji2 {
+      display: none; } }
 
 footer {
   position: relative;

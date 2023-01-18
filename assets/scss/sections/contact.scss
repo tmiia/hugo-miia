@@ -59,7 +59,7 @@
 
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-width : 950px) {
   .contact{
     padding: 20rem 3rem 3rem 3rem;
     position: relative;
@@ -72,6 +72,9 @@
       .mailto{
         max-width: fit-content;
         font-size: 2rem;
+        span{
+          font-size: 1rem;
+        }
         svg{
           width: 2rem;
         }
@@ -92,6 +95,30 @@
 
  @media only screen and (max-width : 680px) {
   .contact{
-    display: none;
+    margin-top: 4rem;
+    padding: 3rem;
+    position: relative;
+
+    .contact__content{
+      align-self: flex-start;
+      h3{
+        font-size: 2rem;
+      }
+      .mailto{
+        width: 100%;
+        background-color: $white;
+        padding: 0;
+        span{
+          display: none;
+        }
+        svg{
+          width: 2rem;
+        }
+      }
+    }
+
+    #memoji2{
+display: none;
+    }
   }
 }
