@@ -74,3 +74,25 @@ a{
     margin-bottom: 1rem;
   }
  }
+
+ @media only screen and (max-width : 680px) {
+    body{
+      width: 100%;
+    }
+    .wrapper{
+      margin: 0 $wrapper-small;
+    }
+    .btn{
+      font-size: 1rem;
+    }
+    .socials{
+      li{
+        a{
+          margin: 0 1rem;
+          img, svg{
+            width: 1.3rem;
+          }
+        }
+      }
+    }
+ }

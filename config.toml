@@ -1,7 +1,7 @@
 baseURL = '/'
 languageCode = 'fr-FR'
 title = 'Nehémia Telusma • Portfolio'
-theme = 'blank'
+
 
 [markup.goldmark.parser.attribute]
 block = true

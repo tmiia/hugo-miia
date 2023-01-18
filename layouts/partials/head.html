@@ -8,6 +8,7 @@
   <meta itemprop="name" content="{{ .Site.Title }}" />
   <meta name="application-name" content="{{ .Site.Title }}" />
   <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+  <script src="https://kit.fontawesome.com/5ab4441cb0.js" crossorigin="anonymous"></script>
   {{ $styles := resources.Get "/scss/main.scss" | toCSS }}
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="{{ $styles.Permalink }}">

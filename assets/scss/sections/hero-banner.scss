@@ -59,7 +59,7 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-width : 950px) {
 
   .hero-banner{
     display: flex;
@@ -85,6 +85,43 @@
       .shaded-bg{
         width: 100%;
         height: 20rem;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width : 680px) {
+
+  .hero-banner{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    .left{
+      h1{
+        font-size: 3rem;
+      }
+      #colored-name{
+        font-size: 3.5rem;
+      }
+      p{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        width: 95%;
+      }
+    }
+    .right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6rem ;
+      .shaded-bg{
+        width: 100%;
+        height: 12rem;
+        #memoji{
+          width: 15rem;
+          bottom: -5%;
+        }
       }
     }
   }
