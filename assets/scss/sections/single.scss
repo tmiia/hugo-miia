@@ -78,3 +78,48 @@
     }
   }
 }
+
+@media only screen and (max-width : 950px) {
+  .single{
+    .single__content{
+      flex-direction: column;
+      .single__right{
+        margin-top: 2rem;
+      }
+    }
+  }
+ }
+
+ @media only screen and (max-width : 680px) {
+  .single{
+    .single__content{
+      .single__left{
+        .single__description{
+          width: 95%;
+        }
+      }
+      .single__right{
+        .single__tools{
+          flex-wrap: wrap;
+          hr{
+            display: none;
+          }
+          .single__hard-tools{
+            justify-content: flex-start;
+            padding: 1rem 1.5rem;
+            img{
+              margin: 0 0.5rem;
+            }
+          }
+          .single__manage-tools{
+            justify-content: flex-start;
+            padding: 1rem 1.5rem;
+            img{
+              margin: 0 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -83,7 +83,7 @@ a {
       .socials li a img, .socials li a svg {
         width: 1.2rem; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 950px) {
   .socials li a {
     margin: 0 1.9rem; }
     .socials li a img, .socials li a svg {
@@ -557,3 +557,27 @@ footer {
     .single .single__navigation a {
       font-family: ".SF Compact", sans-serif;
       color: #FFFFFF; }
+
+@media only screen and (max-width: 950px) {
+  .single .single__content {
+    flex-direction: column; }
+    .single .single__content .single__right {
+      margin-top: 2rem; } }
+
+@media only screen and (max-width: 680px) {
+  .single .single__content .single__left .single__description {
+    width: 95%; }
+  .single .single__content .single__right .single__tools {
+    flex-wrap: wrap; }
+    .single .single__content .single__right .single__tools hr {
+      display: none; }
+    .single .single__content .single__right .single__tools .single__hard-tools {
+      justify-content: flex-start;
+      padding: 1rem 1.5rem; }
+      .single .single__content .single__right .single__tools .single__hard-tools img {
+        margin: 0 0.5rem; }
+    .single .single__content .single__right .single__tools .single__manage-tools {
+      justify-content: flex-start;
+      padding: 1rem 1.5rem; }
+      .single .single__content .single__right .single__tools .single__manage-tools img {
+        margin: 0 0.5rem; } }
