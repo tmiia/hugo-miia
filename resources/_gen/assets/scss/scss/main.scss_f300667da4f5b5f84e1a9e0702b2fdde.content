@@ -239,7 +239,7 @@ header {
         margin-top: 0.5rem;
         font-weight: 500; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 950px) {
   .cv-container {
     display: none; }
     .cv-container div {
@@ -340,14 +340,14 @@ header {
   .projects .project__card > a:hover ~ .project__mask {
     background-color: rgba(10, 15, 20, 0.053); } }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 950px) {
   .card {
     width: 100%;
     height: 20rem;
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-top: 0; }
+    margin-top: 4rem; }
     .card #arrow {
       position: absolute;
       top: -10px;
@@ -357,6 +357,8 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .card .card__content h3 {
+        font-size: 2.5rem; }
       .card .card__content #logo {
         width: 2.3rem; }
   .projects {
@@ -367,8 +369,22 @@ header {
       min-height: 23rem; } }
 
 @media only screen and (max-width: 680px) {
-  .card {
-    display: none; } }
+  .card #arrow {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 7rem; }
+  .card .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card .card__content h3 {
+      font-size: 1.5rem; }
+    .card .card__content #logo {
+      width: 1.7rem; }
+  .projects .project__card {
+    min-height: 7rem;
+    background-position: center; } }
 
 .contact {
   position: relative;
