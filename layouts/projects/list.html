@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1>Projets</h1>
+    <div class="projects">
+      {{ range .Pages }}
+      <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">
+        <a href="{{.Permalink}}"></a>
+        <div class="project__mask"></div>
+      </div>
+      {{ end }}
+  </div>
+
+{{ end }}

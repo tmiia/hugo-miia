@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <ul class="projects">
+    {{ range (.Pages.ByDate).Reverse }}
+    <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">
+      <a href="{{.Permalink}}"></a>
+      <div class="project__mask"></div>
+    </div>
+    {{ end }}
+  </ul>
+{{ end}}

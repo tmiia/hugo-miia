@@ -1,7 +1,7 @@
 <div class="single__left">
   <h1 class="single__title">{{.Title}}</h1>
   {{ range $index, $category := .Params.Categories}}
-    <span class="single__categories">{{ $category }}</span>
+    <a href="/categories/{{. | urlize }}" class="single__categories">{{ $category }}</a>
   {{ end }}
   <p class="single__description">
     {{.Content}}
