@@ -515,6 +515,11 @@ footer {
         font-family: ".SF Compact", sans-serif;
         font-size: 2rem;
         margin-bottom: 2rem; }
+      .single .single__content .single__left .single__categories {
+        padding: 0.3rem 1rem;
+        background-color: #6B88C0;
+        border-radius: 10px;
+        margin-right: 0.5rem; }
       .single .single__content .single__left .single__description {
         font-size: 1.2rem;
         font-weight: 400;

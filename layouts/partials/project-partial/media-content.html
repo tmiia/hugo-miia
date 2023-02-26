@@ -1,0 +1,12 @@
+<div class="single__right">
+  <a href="{{ .Params.Links.site.url }}" target="_blank">
+    <img src="{{ .Params.Cover.url }}" alt="">
+  </a>
+  <div class="single__tools">
+    <div class="single__hard-tools">
+      {{ range $index, $tools := .Params.Technologies}}
+        <img src="/tools/{{$tools}}.svg" alt="">
+      {{ end }}
+    </div>
+  </div>
+</div>

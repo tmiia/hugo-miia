@@ -1,0 +1,9 @@
+<div class="single__left">
+  <h1 class="single__title">{{.Title}}</h1>
+  {{ range $index, $category := .Params.Categories}}
+    <span class="single__categories">{{ $category }}</span>
+  {{ end }}
+  <p class="single__description">
+    {{.Content}}
+  </p>
+</div>

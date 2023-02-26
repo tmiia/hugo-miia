@@ -9,38 +9,10 @@
         <section class="single">
           <span class="fil-ariane"><a href="/">Home /</a> {{ .Params.slug }}</span>
           <div class="single__content">
-            <div class="single__left">
-              <h1 class="single__title">{{.Title}}</h1>
-              <p class="single__description">
-                {{.Content}}
-              </p>
-            </div>
-            <div class="single__right">
-              <a href="{{ .Params.Links.site.url }}" target="_blank">
-                <img src="{{ .Params.Cover.url }}" alt="">
-              </a>
-              <div class="single__tools">
-                <div class="single__hard-tools">
-                  {{ range $index, $tools := .Params.Technologies}}
-                    <img src="/tools/{{$tools}}.svg" alt="">
-                  {{ end }}
-                </div>
-              </div>
-            </div>
+            {{- partial "project-partial/textual-content.html" . -}}
+            {{- partial "project-partial/media-content.html" . -}}
           </div>
-          <div class="single__navigation">
-            <div class="next-post">
-              {{ if .NextPage }}
-              <a class="link-reverse" href="{{ .NextPage.Permalink }}">«- {{ .NextPage.Title | truncate 50 "..." }}</a>
-              {{ end }}
-            </div>
-
-            <div class="previous-post">
-              {{ if .PrevPage }}
-              <a class="link-reverse" href="{{ .PrevPage.Permalink }}">{{ .PrevPage.Title | truncate 50 "..."}} -»</a>
-              {{ end }}
-            </div>
-          </div>
+          {{- partial "project-partial/navigation.html" . -}}
         </section>
         {{- end }}
       </div>
