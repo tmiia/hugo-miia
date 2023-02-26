@@ -1,16 +1,24 @@
 ---
-title: "Intégration de maquette • MNTN"
-date: 2022-12-29T01:57:53+01:00
+title: "MNTN"
+subtitle: Intégration
+description: ""
+date: 2023-02-05T02:16:47.071Z
+preview: ""
 draft: false
-featured_image: "/projects/project-1.webp"
-project_link: "https://mntn-telusma.netlify.app/"
 slug: "MNTN"
-hard_tools: [
-  "html",
-  "css"
-]
-manage_tools: [
-]
+
+cover:
+    url: "/projects/project-1.webp"
+
+categories: ["Intégration web"]
+technologies: ["html", "css"]
+
+links:
+  site:
+    type: site
+    title: "Lien externe vers le site hébergé"
+    url: https://mntn-telusma.netlify.app/
+
 ---
 
 Avec cette page web, j'ai décidé de mettre à l'épreuve mes compétences en développement Front-End en réalisant une homepage en HTML et SCSS en seulement 2 heures. Pour me challenger encore plus, j'ai choisi de reproduire une maquette trouvée en ligne le plus fidèlement possible.

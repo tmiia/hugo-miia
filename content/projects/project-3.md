@@ -1,18 +1,24 @@
 ---
 title: "Design intéractif • WEBIKE"
-date: 2022-12-29T02:57:34+01:00
+subtitle: Refonte web
+description: ""
+date: 2023-02-05T02:16:47.071Z
+preview: ""
 draft: false
-featured_image: "/projects/project-3.webp"
-project_link: "https://www.behance.net/gallery/157376699/WEBIKE"
 slug: "WEBIKE"
-hard_tools: [
-  "html",
-  "css",
-]
-manage_tools: [
-  "trello",
-  "github"
-]
+
+cover:
+    url: "/projects/project-3.webp"
+
+categories: ["UX", "Refonte", "Audit", "Intégration web"]
+technologies: ["html", "css", "figma", "tailwind"]
+
+links:
+  site:
+    type: site
+    title: "Lien externe vers le site hébergé"
+    url: https://www.behance.net/gallery/157376699/WEBIKE
+
 ---
 
 Ce projet a permit, à mon équipe de 4 autres étudiants et moi-même, de nous focaliser uniquement sur la conception UX et UI en proposant une refonte de l'application mobile V3 de Bordeaux afin de encourager les habitants de la ville à utiliser les services proposés par la municipalité.

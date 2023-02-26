@@ -16,18 +16,12 @@
               </p>
             </div>
             <div class="single__right">
-              <a href="{{ .Params.project_link }}" target="_blank">
-                <img src="{{ .Params.featured_image }}" alt="">
+              <a href="{{ .Params.Links.site.url }}" target="_blank">
+                <img src="{{ .Params.Cover.url }}" alt="">
               </a>
               <div class="single__tools">
                 <div class="single__hard-tools">
-                  {{ range $index, $tools := .Params.hard_tools}}
-                    <img src="/tools/{{$tools}}.svg" alt="">
-                  {{ end }}
-                </div>
-                <hr>
-                <div class="single__manage-tools">
-                  {{ range $index, $tools := .Params.manage_tools}}
+                  {{ range $index, $tools := .Params.Technologies}}
                     <img src="/tools/{{$tools}}.svg" alt="">
                   {{ end }}
                 </div>

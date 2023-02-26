@@ -15,15 +15,16 @@
     </div>
   </div>
 
-  <div class="projects">
-    {{range .Site.RegularPages}}
-    <div class="project__card" style="background-image: url('{{ .Params.featured_image }}')">
-      <a href="{{.Permalink}}"></a>
-      <div class="project__mask"></div>
+  {{ with .Site.GetPage "/projects" }}
+    <div class="projects">
+      {{ range first 4 (.Pages.ByDate).Reverse }}
+      <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">
+        <a href="{{.Permalink}}"></a>
+        <div class="project__mask"></div>
+      </div>
+      {{ end }}
     </div>
-    {{end}}
-  </div>
-
+  {{end}}
 
   {{- partial "contact.html" . -}}
 

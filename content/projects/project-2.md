@@ -1,19 +1,24 @@
 ---
 title: "Refonte de site • Accor Arena"
-date: 2022-12-29T02:54:22+01:00
+subtitle: Refonte web
+description: ""
+date: 2023-02-05T02:16:47.071Z
+preview: ""
 draft: false
-featured_image: "/projects/project-2.webp"
-project_link: "https://accor-arena.netlify.app/"
 slug: "Accor-Arena"
-hard_tools: [
-  "html",
-  "css",
-  "js"
-]
-manage_tools: [
-  "trello",
-  "github"
-]
+
+cover:
+    url: "/projects/project-2.webp"
+
+categories: ["Refonte", "Audit",s "Intégration web"]
+technologies: ["html", "css", "js"]
+
+links:
+  site:
+    type: site
+    title: "Lien externe vers le site hébergé"
+    url: https://accor-arena.netlify.app/
+
 ---
 
 Dans le cadre d'un projet universitaire, J'ai dû faire la refonte du site de l'Accor Arena avec une équipe de 4 autres étudiants.

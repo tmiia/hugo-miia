@@ -1,18 +1,24 @@
 ---
 title: "Galerie • Immaculeé"
-date: 2022-12-29T02:57:43+01:00
+subtitle: Refonte web
+description: ""
+date: 2023-02-05T02:16:47.071Z
+preview: ""
 draft: false
-featured_image: "/projects/project-4.webp"
-project_link: "https://galerie-immaculee.netlify.app/"
-slug: "Immaculee"
-hard_tools: [
-  "html",
-  "css",
-  "js"
-]
-manage_tools: [
-  "github"
-]
+slug: "Immaculeé"
+
+cover:
+    url: "/projects/project-4.webp"
+
+categories: ["Intégration web"]
+technologies: ["html", "css", "js"]
+
+links:
+  site:
+    type: site
+    title: "Lien externe vers le site hébergé"
+    url: https://galerie-immaculee.netlify.app/
+
 ---
 
 Faire un site internet sur l'art sous l'angle d'une couleur c'est ce qu'on nous a demandé de faire dans ce projet. Ajouter une fonctionnalité permettant de mettre des filtres coder from scratch en JavaScript sur les photos du site faisait également parti du cahier des charges.

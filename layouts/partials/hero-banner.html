@@ -4,11 +4,9 @@
 {{  $github := resources.Get "/media/logos/github.svg" }}
 <div class="hero-banner">
   <div class="left">
-    <ul class="socials">
-      <li><a href="https://www.linkedin.com/in/nehemia-telusma/"><img src="{{ $linkedin.Permalink }}" alt=""></a></li>
-      <li><a href="https://www.behance.net/nehmiatelusma"><img src="{{ $behance.Permalink }}" alt=""></a></i></li>
-      <li><a href="https://github.com/tmiia"><img src="{{ $github.Permalink }}" alt=""></a></li>
-    </ul>
+
+    {{ partial "socials.html" . }}
+
     <h1>Nehémia<br><span id="colored-name">Telusma</span></h1>
     <p>Développeuse Front-End, étudiante à l’IUT Bordeaux Montaigne et à la recherche d’une alternance ! </p>
     <a href="#contact" class="btn">Recrutez moi</a>

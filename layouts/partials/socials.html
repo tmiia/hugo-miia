@@ -1,0 +1,9 @@
+<ul class="socials">
+  {{ range .Site.Menus.social }}
+    <li>
+      <a href="{{ .URL }}" title="{{ .Title }}" target="_blank">
+        {{ .Pre }}
+      </a>
+    </li>
+  {{ end }}
+</ul>
