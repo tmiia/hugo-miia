@@ -1,6 +1,18 @@
 {{ define "main" }}
 
-<h1>Projets</h1>
+<h1 style="font-size: 2.5rem; margin-top: 1rem;">Projets</h1>
+<div class="search">
+  <h2>Trier par catégories :</h2>
+  <ul class="taxonomies__item">
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    {{ if eq $taxonomyname "categories" }}
+      {{ range $name, $value := $taxonomy }}
+      <li><a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+      {{ end }}
+     {{ end }}
+    {{ end }}
+  </ul>
+</div>
     <div class="projects">
       {{ range .Pages }}
       <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">

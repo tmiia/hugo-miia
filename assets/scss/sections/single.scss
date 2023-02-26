@@ -1,15 +1,6 @@
 .single{
   display: flex;
   flex-direction: column;
-
-  .fil-ariane{
-    font-weight: 600;
-    margin-bottom: 2rem;
-    a{
-      font-weight: 400;
-      font-style: italic;
-    }
-  }
   .single__content{
     display: flex;
     .single__left{
@@ -24,6 +15,9 @@
         background-color: #6B88C0;
         border-radius: 10px;
         margin-right: 0.5rem;
+        &:hover{
+          background-color: darken(#6B88C0, 10%);
+        }
       }
       .single__description{
         font-size: 1.2rem;

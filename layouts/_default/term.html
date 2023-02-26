@@ -1,4 +1,18 @@
 {{ define "main" }}
+<span class="fil-ariane"><a href="/">Home /</a> <a href="/categories">Categories /</a> <strong>{{ .Title }}</strong></span>
+<h1 style="font-size: 2.5rem; margin: 1rem 0;">{{ .Title }}</h1>
+<ul class="taxonomies__item">
+  {{ $currentPageCategory := lower $.Name }}
+  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    {{ if eq $taxonomyname "categories" }}
+      {{ range $name, $value := $taxonomy }}
+        {{ if ne $currentPageCategory (lower $name) }}
+          <li><a href="{{ "/" | relLangURL }}{{ $taxonomyname | urlize }}/{{ $name | urlize }}">{{ $name }}</a></li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>
   <ul class="projects">
     {{ range (.Pages.ByDate).Reverse }}
     <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">

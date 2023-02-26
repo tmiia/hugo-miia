@@ -2,7 +2,7 @@
 title: "Galerie • Immaculeé"
 subtitle: Refonte web
 description: ""
-date: 2023-02-05T02:16:47.071Z
+date: 2023-02-26T02:16:47.071Z
 preview: ""
 draft: false
 slug: "Immaculeé"
@@ -10,7 +10,7 @@ slug: "Immaculeé"
 cover:
     url: "/projects/project-4.webp"
 
-categories: ["Intégration web"]
+categories: ["Intégration"]
 technologies: ["html", "css", "js"]
 
 links:
@@ -21,7 +21,7 @@ links:
 
 ---
 
-Faire un site internet sur l'art sous l'angle d'une couleur c'est ce qu'on nous a demandé de faire dans ce projet. Ajouter une fonctionnalité permettant de mettre des filtres coder from scratch en JavaScript sur les photos du site faisait également parti du cahier des charges.
+Faire un site internet sur l'art sous l'angle d'une couleur c'est ce qu'on nous a demandé de faire dans ce projet. Ajouter une fonctionnalité permettant de mettre des filtres codé from scratch en JavaScript sur les photos du site faisait également parti du cahier des charges.
 {.single__description}
 
 J'ai dans ce projet coder cette page web en HTML SCSS JavaScript et réaliser le filtre permettant de pixeliser les images.

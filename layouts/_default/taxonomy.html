@@ -1,12 +1,13 @@
 {{ define "main" }}
-
-
-  <ul>
-    {{ range sort .Data.Pages ".Params.title" }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+<div class="taxonomies">
+  <span class="fil-ariane"><a href="/">Home /</a> <strong>{{ .Title }}</strong></span>
+    <ul class="taxonomies__item">
+      {{ range sort .Data.Pages ".Params.title" }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+</div>
 
 {{ end }}

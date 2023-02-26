@@ -10,7 +10,7 @@ slug: "Accor-Arena"
 cover:
     url: "/projects/project-2.webp"
 
-categories: ["Refonte", "Audit", "Intégration web"]
+categories: ["Refonte", "Audit", "Intégration"]
 technologies: ["html", "css", "js"]
 
 links:
@@ -27,5 +27,5 @@ Dans le cadre d'un projet universitaire, J'ai dû faire la refonte du site de l'
 Avant même de commencer à coder quoi que ce soit, il a fallut fait un audit du site existant. Relever les éléments positif et négatif du site, tester son accessibilité, vérifier que la navigation sur le site soit simple et intuitive.
 {.single__description}
 
-Une fois cela fait, en équipe nous avons déterminer quelle était le cible et comment présenter l'information sur le site pour que ce soit le plus simple et clair pour les visiteurs. C'est après avoir fait les Wireframes et les maquettes que nous avons pu commencer à coder. J'ai ainsi pu être un des moteurs de l'équipe dans la phase de recherche et surtout dans la phase de développement.
+Une fois cela fait, en équipe nous avons déterminé quelle était le cible et comment présenter l'information sur le site pour que ce soit le plus simple et clair pour les visiteurs. C'est après avoir fait les Wireframes et les maquettes que nous avons pu commencer à coder. J'ai ainsi pu être l'un des moteurs de l'équipe dans la phase de recherche et surtout dans la phase de développement.
 {.single__description}
