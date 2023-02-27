@@ -3,7 +3,8 @@
   min-height: 100vh;
 
   &__text-content{
-    flex: 1.5;
+    // flex: 1.5;
+    width: 60%;
     h3{
       text-transform: uppercase;
       font-size: 4rem;
@@ -18,30 +19,62 @@
     }
   }
   &__carousel{
-    flex: 1;
-    .cv__items{
+    display: flex;
+    // flex: 1;
+    align-items: center;
+    width: 40%;
+    min-height: 90vh;
+    .swiper{
+      position: relative;
       display: flex;
-      background-color: $white;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 10px;
-      img{
-        max-width: 42px;
-        margin-right: 1rem;
-      }
-      .items__content{
+      flex-direction: column;
+      height: min-content;
+      .navigation{
+        position: static;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        span{
-          color: $dark-blue;
-          &:first-of-type{
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.4rem;
+        min-height: 1rem;
+        div{
+          position: static;
+          margin: 1rem 1rem 0 0;
+          background-color: rgba(33, 64, 103, 0.76);
+          color: #CDDCE8;
+          border-radius: 20rem;
+          min-width: 3rem;
+          min-height: 3rem;
+          &::after{
+            font-size: 1rem;
           }
-          &:nth-of-type(2){
-            opacity: 0.8;
+        }
+      }
+      .swiper-slide{
+        margin-right: 1rem;
+        .cv__items{
+          display: flex;
+          background-color: $white;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          border-radius: 10px;
+          min-width: 385px;
+          img{
+            max-width: 42px;
+            margin-right: 1rem;
+          }
+          .items__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span{
+              color: $dark-blue;
+              &:first-of-type{
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 0.4rem;
+              }
+              &:nth-of-type(2){
+                opacity: 0.8;
+              }
+            }
           }
         }
       }

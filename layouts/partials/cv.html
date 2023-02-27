@@ -6,37 +6,88 @@
     <p>Retrouvez ici les outils que j’utilise le plus régulièrement dans mes projets, mais aussi mes savoir-être qui me permettent de travailler en équipe. Et finalement, découvrez-en plus sur moi et mes centres l’intérêt.</p>
   </div>
   <div class="cv__carousel">
-    <div class="cv__items">
-        <img src="/tools/js-blue.svg" alt="">
-        <div class="items__content">
-          <span>JavaScript</span>
-          <span>Y'en a dans tous mes projets web, de la simple animation à la Web App.</span>
-        </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="cv__items">
+          <img src="/tools/js-blue.svg" alt="">
+          <div class="items__content">
+            <span>JavaScript</span>
+            <span>Il y'en a dans tous mes projets web, de la simple animation à la Web App.</span>
+          </div>
+      </div>
+      <div class="cv__items">
+          <img src="/tools/hugo-blue.svg" alt="">
+          <div class="items__content">
+            <span>Hugo</span>
+            <span>Mon portfolio est en HUGO, comme tous mes sites static !</span>
+          </div>
+      </div>
+      <div class="cv__items">
+          <img src="/tools/tailwind-blue.svg" alt="">
+          <div class="items__content">
+            <span>Tailwind</span>
+            <span>Je l'utilise depuis peu, mais les va-et-vient de l'HTML au CSS ne me manque pas.</span>
+          </div>
+      </div>
+      <div class="cv__items">
+          <img src="/tools/scss.svg" alt="">
+          <div class="items__content">
+            <span>Scss</span>
+            <span>Partout, partout, j'en mets partout !</span>
+          </div>
+      </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="cv__items">
+          <img src="/tools/soft/equipe.svg" alt="">
+          <div class="items__content">
+            <span>Esprit d'équipe</span>
+            <span>Travailler en équipe c'est s'entraider, délèguer et partager nos connaissance !</span>
+          </div>
+      </div>
+      <div class="cv__items">
+          <img src="/tools/soft/sociable.svg" alt="">
+          <div class="items__content">
+            <span>Empathie</span>
+            <span>Une qualité que je trouve importante quand on intéragie avec d'autres personnes.</span>
+          </div>
+      </div>
+      <div class="cv__items">
+          <img src="/tools/soft/puzzle.svg" alt="">
+          <div class="items__content">
+            <span>Résolution de problèmes</span>
+            <span>C'est sans doûte cette appétence qui me fait tant aimer dev !</span>
+          </div>
+      </div>
+      <div class="cv__items">
+          <img src="/tools/soft/curieux.svg" alt="">
+          <div class="items__content">
+            <span>Curiosité</span>
+            <span>C'est cette curiosité qui m'a fait découvrir l'HTML losque j'étais au collège.</span>
+          </div>
+      </div>
+      </div>
     </div>
-
-    <div class="cv__items">
-        <img src="/tools/hugo-blue.svg" alt="">
-        <div class="items__content">
-          <span>Hugo</span>
-          <span>Mon portfolio est en HUGO, comme tous mes sites static !</span>
-        </div>
+    <div class="navigation">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-
-    <div class="cv__items">
-        <img src="/tools/tailwind-blue.svg" alt="">
-        <div class="items__content">
-          <span>Tailwind</span>
-          <span>Je l'utilise depuis peu, mais les va-et-vient de l'HTML au CSS ne me manque pas.</span>
-        </div>
-    </div>
-
-    <div class="cv__items">
-        <img src="/tools/scss.svg" alt="">
-        <div class="items__content">
-          <span>Scss</span>
-          <span>Partout, partout, j'en mets partout !</span>
-        </div>
-    </div>
-
+  </div>
   </div>
 </section>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
