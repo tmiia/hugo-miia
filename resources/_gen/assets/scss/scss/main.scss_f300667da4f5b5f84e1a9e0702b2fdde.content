@@ -700,3 +700,9 @@ footer {
 
 .text-effect span {
   transition: transform .3s ease-in-out; }
+
+.move-gradient {
+  background-position: -100%;
+  background-size: 400%;
+  cursor: pointer;
+  transition: background-position .1s ease-in-out; }
