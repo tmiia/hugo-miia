@@ -104,6 +104,17 @@
     p{
       font-size: 1rem;
       line-height: 19px;
+      width: 130%;
+    }
+  }
+  &__carousel{
+    width: 100%;
+    .swiper{
+      .swiper-slide{
+        .cv__items{
+          min-width: calc(100% - 2rem);
+        }
+      }
     }
   }
  }
