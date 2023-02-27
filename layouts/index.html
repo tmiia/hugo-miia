@@ -1,31 +1,12 @@
 {{ define "main" }}
-{{  $arrow := resources.Get "/media/big-arrow.svg" }}
-{{  $logo := resources.Get "/media/logo.svg" }}
 
 {{- partial "hero-banner.html" . -}}
 </div>
 {{- partial "cv.html" . -}}
 <div class="wrapper">
-  <div class="card">
-    <img id="arrow" src="{{ $arrow.Permalink }}" alt="">
-    <div class="card__content">
-      <img id="logo" src="{{ $logo.Permalink }}" alt="">
-      <h3>Découvrez mes<br>
-        réalisations !</h3>
-      <a href="/projects" style="text-transform: uppercase;">Voir tous mes projets</a>
-    </div>
-  </div>
 
-  {{ with .Site.GetPage "/projects" }}
-    <div class="projects">
-      {{ range first 4 (.Pages.ByDate).Reverse }}
-      <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">
-        <a href="{{.Permalink}}"></a>
-        <div class="project__mask"></div>
-      </div>
-      {{ end }}
-    </div>
-  {{end}}
+  {{- partial "project-partial/cta-card.html" . -}}
+  {{- partial "project-partial/project-item.html" . -}}
 
   {{- partial "contact.html" . -}}
 
