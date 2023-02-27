@@ -230,7 +230,7 @@ header {
       line-height: 24px; }
   .cv__carousel {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     width: 40%;
     min-height: 90vh; }
     .cv__carousel .swiper {

@@ -21,7 +21,7 @@
   &__carousel{
     display: flex;
     // flex: 1;
-    align-items: center;
+    align-items: flex-end;
     width: 40%;
     min-height: 90vh;
     .swiper{
