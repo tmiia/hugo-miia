@@ -3,7 +3,8 @@
 @import 'global';
 
 @import 'sections/header';
-@import 'sections/hero-banner';
+@import 'sections/hero-banner/hero-banner';
+@import 'sections/hero-banner/floating';
 @import 'sections/cv';
 @import 'sections/content';
 @import 'sections/contact';

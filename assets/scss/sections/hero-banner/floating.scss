@@ -1,0 +1,51 @@
+
+@media only screen and (max-width : 950px){
+  .img-mobile{
+    display: block;
+  }
+  .img-desktop{
+    display: none;
+  }
+  .floating-icons{
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 950px){
+  .img-mobile{
+    display: none;
+  }
+  .img-desktop{
+    display: block;
+  }
+  .float{
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+    .floating-icons{
+      position: absolute;
+      display: block;
+    }
+    #flo-figma{
+      top: 1rem;
+      left: 13rem;
+    }
+    #flo-github{
+      top: 6rem;
+      left: 5rem;
+    }
+    #flo-ide{
+      top: 7rem;
+      right: 9rem;
+    }
+    #flo-photoshop{
+      top: 8rem;
+      left: 10rem;
+    }
+    #flo-trello{
+      top: 4rem;
+      right: 7rem;
+    }
+  }
+}

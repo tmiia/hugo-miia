@@ -1,4 +1,14 @@
-{{  $memoji := resources.Get "/media/memoji.svg" }}
+{{  $memoji := resources.Get "/media/memoji-blank.webp" }}
+{{  $memoji_mobile := resources.Get "/media/memoji.svg" }}
+
+
+{{  $memoji := resources.Get "/media/memoji-blank.webp" }}
+{{  $figma := resources.Get "/media/flo-figma.svg" }}
+{{  $flo_github := resources.Get "/media/flo-github.svg" }}
+{{  $ide := resources.Get "/media/flo-ide.svg" }}
+{{  $photoshop := resources.Get "/media/flo-photoshop.svg" }}
+{{  $trello := resources.Get "/media/flo-trello.svg" }}
+
 {{  $linkedin := resources.Get "/media/logos/linkedin.svg" }}
 {{  $behance := resources.Get "/media/logos/behance.svg" }}
 {{  $github := resources.Get "/media/logos/github.svg" }}
@@ -14,9 +24,19 @@
   <div class="right">
     <div class="shaded-bg">
       <div class="white-mask">
-
       </div>
-      <img id="memoji" src="{{ $memoji.Permalink }}" alt="">
+      <img class="img-mobile" id="memoji" src="{{ $memoji_mobile.Permalink }}" alt="">
+
+      <div class="float">
+        <img class="img-desktop" id="memoji-desktop" src="{{ $memoji.Permalink }}" alt="">
+        <img class="floating-icons" id="flo-figma" src="{{ $figma.Permalink }}" alt="">
+        <img class="floating-icons" id="flo-github" src="{{ $flo_github.Permalink }}" alt="">
+        <img class="floating-icons" id="flo-ide" src="{{ $ide.Permalink }}" alt="">
+        <img class="floating-icons" id="flo-photoshop" src="{{ $photoshop.Permalink }}" alt="">
+        <img class="floating-icons" id="flo-trello" src="{{ $trello.Permalink }}" alt="">
+      </div>
     </div>
   </div>
 </div>
+
+<script src="{{ "js/parallax.js" | relURL }}"></script>
