@@ -282,7 +282,7 @@ header {
         min-height: 1rem; }
         .cv__carousel .swiper .navigation div {
           position: static;
-          margin: 1rem 1rem 0 0;
+          margin: 0 1rem 0 0;
           background-color: rgba(33, 64, 103, 0.76);
           color: #CDDCE8;
           border-radius: 20rem;
@@ -291,9 +291,9 @@ header {
           .cv__carousel .swiper .navigation div::after {
             font-size: 1rem; }
       .cv__carousel .swiper .swiper-slide {
-        margin-right: 1rem;
-        padding: 2rem 0;
-        cursor: grab; }
+        padding: 2rem 0.5rem;
+        height: fit-content;
+        background-color: #051932; }
         .cv__carousel .swiper .swiper-slide .cv__items {
           position: relative;
           display: flex;
@@ -301,7 +301,7 @@ header {
           padding: 1rem;
           margin-bottom: 1rem;
           border-radius: 10px;
-          min-width: 385px; }
+          max-width: 345px; }
           .cv__carousel .swiper .swiper-slide .cv__items:hover {
             transform: rotate(-2deg);
             transition: transform .15s ease-in-out; }

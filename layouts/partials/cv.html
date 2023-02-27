@@ -80,6 +80,19 @@
 <script>
   const swiper = new Swiper('.swiper', {
   // Optional parameters
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: false,
+      translate: [0, 0, -400],
+      rotate: [0, 0, -10],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+      rotate: [0, 0, 10],
+    },
+  },
   direction: 'horizontal',
   loop: false,
 
