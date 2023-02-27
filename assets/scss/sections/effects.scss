@@ -1,0 +1,9 @@
+.text-effect{
+  &:hover > span{
+    display: inline-block;
+    transform: translateX(50%);
+  }
+  span{
+    transition: transform .3s ease-in-out;
+  }
+}

@@ -483,10 +483,11 @@ header {
   margin-top: 6rem;
   padding: 3rem 0 3rem 5rem; }
   .contact h3 {
-    color: #051932;
     font-size: 2.8rem;
     font-weight: 800;
     text-transform: uppercase; }
+    .contact h3 span {
+      color: #051932; }
   .contact svg {
     fill: #31A8FF; }
   .contact .mailto {
@@ -692,3 +693,10 @@ footer {
   .search h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem; }
+
+.text-effect:hover > span {
+  display: inline-block;
+  transform: translateX(50%); }
+
+.text-effect span {
+  transition: transform .3s ease-in-out; }
