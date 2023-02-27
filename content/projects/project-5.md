@@ -3,7 +3,6 @@ title: "Outil de prévention • Safe N Tech"
 subtitle: Création d'un outil de prévention
 date: 2023-02-27T11:45:02+01:00
 draft: false
-type: project
 author: Nehémia Telusma
 slug: "safentech"
 
