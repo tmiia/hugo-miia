@@ -9,18 +9,18 @@
 }
 
 .move-gradient{
-  // animation: moving-gradient 5s infinite alternate-reverse;
+  animation: moving-gradient 5s infinite alternate-reverse;
   background-position: -100%;
   background-size: 400%;
   cursor: pointer;
   transition: background-position .1s ease-in-out;
 }
 
-// @keyframes moving-gradient {
-//   from{
-//    background-position: 0;
-//   }
-//   to{
-//     background-position: 100%;
-//   }
-// }
+@keyframes moving-gradient {
+  from{
+   background-position: 0;
+  }
+  to{
+    background-position: 100%;
+  }
+}
