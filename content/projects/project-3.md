@@ -10,7 +10,7 @@ slug: "WEBIKE"
 cover:
     url: "/projects/project-3.webp"
 
-categories: ["UX", "Refonte", "Audit", "Intégration"]
+categories: ["UX", "Refonte", "Audit", "Site-web"]
 technologies: ["html", "css", "figma", "tailwind"]
 
 links:

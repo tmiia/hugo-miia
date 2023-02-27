@@ -1,6 +1,6 @@
 ---
 title: "MNTN"
-subtitle: Intégration
+subtitle: Site-web
 description: ""
 date: 2023-02-05T02:16:47.071Z
 preview: ""
@@ -10,7 +10,7 @@ slug: "MNTN"
 cover:
     url: "/projects/project-1.webp"
 
-categories: ["Intégration"]
+categories: ["Site-web"]
 technologies: ["html", "css"]
 
 links:

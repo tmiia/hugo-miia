@@ -10,7 +10,7 @@ slug: "Immaculeé"
 cover:
     url: "/projects/project-4.webp"
 
-categories: ["Intégration"]
+categories: ["Site-web"]
 technologies: ["html", "css", "js"]
 
 links:

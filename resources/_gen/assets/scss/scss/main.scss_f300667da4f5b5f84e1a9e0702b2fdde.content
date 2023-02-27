@@ -535,13 +535,13 @@ footer {
           border-color: #051932; }
         .single .single__content .single__right .single__tools .single__hard-tools, .single .single__content .single__right .single__tools .single__manage-tools {
           display: flex;
-          padding: 1rem 3rem; }
+          padding: 1rem 1.5rem; }
           .single .single__content .single__right .single__tools .single__hard-tools img:first-of-type, .single .single__content .single__right .single__tools .single__manage-tools img:first-of-type {
             margin-left: 0; }
           .single .single__content .single__right .single__tools .single__hard-tools img, .single .single__content .single__right .single__tools .single__manage-tools img {
             border-radius: 0;
             width: 2rem;
-            margin: 0 1.5rem; }
+            margin: 0 0.75rem; }
         .single .single__content .single__right .single__tools .single__hard-tools {
           flex: 2; }
         .single .single__content .single__right .single__tools .single__manage-tools {

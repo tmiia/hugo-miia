@@ -47,14 +47,14 @@
 
         .single__hard-tools, .single__manage-tools{
           display: flex;
-          padding: 1rem 3rem;
+          padding: 1rem 1.5rem;
           img:first-of-type{
             margin-left: 0;
           }
           img{
             border-radius: 0;
             width: 2rem;
-            margin: 0 1.5rem;
+            margin: 0 0.75rem;
           }
         }
         .single__hard-tools{

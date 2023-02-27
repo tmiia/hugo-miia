@@ -10,7 +10,7 @@ slug: "Accor-Arena"
 cover:
     url: "/projects/project-2.webp"
 
-categories: ["Refonte", "Audit", "Intégration"]
+categories: ["Refonte", "Audit", "Site-web"]
 technologies: ["html", "css", "js"]
 
 links:
