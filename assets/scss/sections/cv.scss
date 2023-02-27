@@ -49,13 +49,20 @@
       }
       .swiper-slide{
         margin-right: 1rem;
+        padding: 2rem 0;
+        cursor: grab;
         .cv__items{
+          position: relative;
           display: flex;
           background-color: $white;
           padding: 1rem;
           margin-bottom: 1rem;
           border-radius: 10px;
           min-width: 385px;
+          &:hover{
+            transform: rotate(-2deg);
+            transition: transform .15s ease-in-out;
+          }
           img{
             max-width: 42px;
             margin-right: 1rem;

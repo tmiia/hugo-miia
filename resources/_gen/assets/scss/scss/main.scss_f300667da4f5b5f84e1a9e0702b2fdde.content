@@ -254,14 +254,20 @@ header {
           .cv__carousel .swiper .navigation div::after {
             font-size: 1rem; }
       .cv__carousel .swiper .swiper-slide {
-        margin-right: 1rem; }
+        margin-right: 1rem;
+        padding: 2rem 0;
+        cursor: grab; }
         .cv__carousel .swiper .swiper-slide .cv__items {
+          position: relative;
           display: flex;
           background-color: #FFFFFF;
           padding: 1rem;
           margin-bottom: 1rem;
           border-radius: 10px;
           min-width: 385px; }
+          .cv__carousel .swiper .swiper-slide .cv__items:hover {
+            transform: rotate(-2deg);
+            transition: transform .15s ease-in-out; }
           .cv__carousel .swiper .swiper-slide .cv__items img {
             max-width: 42px;
             margin-right: 1rem; }
