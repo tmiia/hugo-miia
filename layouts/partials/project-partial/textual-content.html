@@ -1,8 +1,12 @@
 <div class="single__left">
   <h1 class="single__title">{{.Title}}</h1>
-  {{ range $index, $category := .Params.Categories}}
-    <a href="/categories/{{. | urlize }}" class="single__categories">{{ $category }}</a>
-  {{ end }}
+
+  <div class="single__categories">
+    {{ range $index, $category := .Params.Categories}}
+      <a href="/categories/{{. | urlize }}" class="single__category">{{ $category }}</a>
+    {{ end }}
+  </div>
+
   <p class="single__description">
     {{.Content}}
   </p>

@@ -4,12 +4,13 @@
   justify-content: space-between;
   &__item{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
     li{
       a{
         padding: 0.3rem 1rem;
         background-color: #6B88C0;
         border-radius: 10px;
-        margin-right: 0.5rem;
         &:hover{
           background-color: darken(#6B88C0, 10%);
         }

@@ -11,12 +11,16 @@
         margin-bottom: 2rem;
       }
       .single__categories{
-        padding: 0.3rem 1rem;
-        background-color: #6B88C0;
-        border-radius: 10px;
-        margin-right: 0.5rem;
-        &:hover{
-          background-color: darken(#6B88C0, 10%);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        .single__category{
+          padding: 0.3rem 1rem;
+          background-color: #6B88C0;
+          border-radius: 10px;
+          &:hover{
+            background-color: darken(#6B88C0, 10%);
+          }
         }
       }
       .single__description{
