@@ -258,8 +258,7 @@ header {
     .cv__text-content .cv__title {
       text-transform: uppercase;
       font-size: 4rem;
-      font-weight: 900;
-      overflow-y: hidden; }
+      font-weight: 900; }
     .cv__text-content p {
       width: 90%;
       margin-top: 1.2rem;
@@ -325,7 +324,9 @@ header {
 @media only screen and (min-width: 960px) {
   .cv {
     flex-direction: row;
-    align-items: center; } }
+    align-items: center; }
+    .cv__text-content .cv__title {
+      overflow-y: hidden; } }
 
 @media only screen and (max-width: 950px) {
   .cv {
@@ -333,19 +334,24 @@ header {
     padding: 4rem 0; }
     .cv__text-content {
       flex: 1.5;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      width: 100%; }
       .cv__text-content h3 {
         text-transform: uppercase;
-        font-size: 3rem;
+        line-height: 40px;
         font-weight: 900; }
+        .cv__text-content h3 span {
+          font-size: 3rem; }
       .cv__text-content p {
-        font-size: 1rem;
-        line-height: 19px;
-        width: 130%; }
+        font-size: 1.2rem;
+        line-height: 24px;
+        width: 100%; }
     .cv__carousel {
       width: 100%; }
-      .cv__carousel .swiper .swiper-slide .cv__items {
-        min-width: calc(100% - 2rem); } }
+      .cv__carousel .swiper .swiper-slide {
+        padding: 2rem 0; }
+        .cv__carousel .swiper .swiper-slide .cv__items {
+          min-width: calc(100% - 2rem); } }
 
 .card {
   position: relative;
@@ -714,14 +720,15 @@ footer {
   to {
     background-position: 100%; } }
 
-.text-translate {
-  display: inline-block;
-  transform: translateY(100%); }
-  .text-translate.animate {
-    animation: text-translate-anim .5s ease-in-out .1s forwards; }
-
 @keyframes text-translate-anim {
   from {
     transform: translateY(100%); }
   to {
     transform: translateY(0); } }
+
+@media only screen and (min-width: 960px) {
+  .text-translate {
+    display: inline-block;
+    transform: translateY(100%); }
+    .text-translate.animate {
+      animation: text-translate-anim .5s ease-in-out .1s forwards; } }

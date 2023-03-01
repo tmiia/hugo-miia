@@ -24,14 +24,6 @@
   }
 }
 
-.text-translate{
-  display: inline-block;
-  transform: translateY(100%);
-  &.animate{
-    animation: text-translate-anim .5s ease-in-out .1s forwards;
-  }
-}
-
 
 @keyframes text-translate-anim {
   from{
@@ -39,5 +31,15 @@
   }
   to{
     transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  .text-translate{
+    display: inline-block;
+    transform: translateY(100%);
+    &.animate{
+      animation: text-translate-anim .5s ease-in-out .1s forwards;
+    }
   }
 }
