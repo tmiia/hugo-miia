@@ -255,10 +255,11 @@ header {
   min-height: 100vh; }
   .cv__text-content {
     width: 60%; }
-    .cv__text-content h3 {
+    .cv__text-content .cv__title {
       text-transform: uppercase;
       font-size: 4rem;
-      font-weight: 900; }
+      font-weight: 900;
+      overflow-y: hidden; }
     .cv__text-content p {
       width: 90%;
       margin-top: 1.2rem;
@@ -694,11 +695,11 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 1rem; }
 
-.text-effect:hover > span {
+.text-effect:hover > span.text-move {
   display: inline-block;
   transform: translateX(50%); }
 
-.text-effect span {
+.text-effect .text-move {
   transition: transform .3s ease-in-out; }
 
 .move-gradient {
@@ -712,3 +713,15 @@ footer {
     background-position: 0; }
   to {
     background-position: 100%; } }
+
+.text-translate {
+  display: inline-block;
+  transform: translateY(100%); }
+  .text-translate.animate {
+    animation: text-translate-anim .5s ease-in-out .1s forwards; }
+
+@keyframes text-translate-anim {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0); } }

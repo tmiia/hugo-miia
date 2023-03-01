@@ -1,10 +1,12 @@
-let img1 = document.querySelector('#flo-figma');
-let img2 = document.querySelector('#flo-github');
-let img3 = document.querySelector('#flo-ide');
-let img4 = document.querySelector('#flo-photoshop');
-let img5 = document.querySelector('#flo-trello');
+const img1 = document.querySelector('#flo-figma');
+const img2 = document.querySelector('#flo-github');
+const img3 = document.querySelector('#flo-ide');
+const img4 = document.querySelector('#flo-photoshop');
+const img5 = document.querySelector('#flo-trello');
 
-let memoji_1 = document.querySelector('#memoji-desktop');
+const memoji_1 = document.querySelector('#memoji-desktop');
+
+const text = document.querySelector(".text-translate");
 
 window.addEventListener("scroll", function () {
 
@@ -15,6 +17,10 @@ window.addEventListener("scroll", function () {
   parallax(img3, -0.0030);
   parallax(img4, -0.0030);
   parallax(img5, -0.010);
+
+  if (isVisible(text)) {
+    text.classList.add("animate");
+  }
 
 })
 

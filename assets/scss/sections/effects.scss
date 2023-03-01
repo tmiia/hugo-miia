@@ -1,9 +1,9 @@
 .text-effect{
-  &:hover > span{
+  &:hover > span.text-move{
     display: inline-block;
     transform: translateX(50%);
   }
-  span{
+  .text-move{
     transition: transform .3s ease-in-out;
   }
 }
@@ -21,5 +21,23 @@
   }
   to{
     background-position: 100%;
+  }
+}
+
+.text-translate{
+  display: inline-block;
+  transform: translateY(100%);
+  &.animate{
+    animation: text-translate-anim .5s ease-in-out .1s forwards;
+  }
+}
+
+
+@keyframes text-translate-anim {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0);
   }
 }

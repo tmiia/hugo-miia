@@ -5,10 +5,11 @@
   &__text-content{
     // flex: 1.5;
     width: 60%;
-    h3{
+    .cv__title{
       text-transform: uppercase;
       font-size: 4rem;
       font-weight: 900;
+      overflow-y: hidden;
     }
     p{
       width: 90%;
