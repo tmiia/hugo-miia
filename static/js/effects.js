@@ -7,6 +7,7 @@ const img5 = document.querySelector('#flo-trello');
 const memoji_1 = document.querySelector('#memoji-desktop');
 
 const text = document.querySelector(".text-translate");
+const text2 = document.querySelector("#text-effect-t2");
 
 window.addEventListener("scroll", function () {
 
@@ -20,6 +21,7 @@ window.addEventListener("scroll", function () {
 
   if (isVisible(text)) {
     text.classList.add("animate");
+    text2.classList.add("animate");
   }
 
 })

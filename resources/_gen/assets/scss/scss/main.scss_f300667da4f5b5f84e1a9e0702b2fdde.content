@@ -326,6 +326,8 @@ header {
     flex-direction: row;
     align-items: center; }
     .cv__text-content .cv__title {
+      overflow-y: hidden; }
+    .cv__text-content p {
       overflow-y: hidden; } }
 
 @media only screen and (max-width: 950px) {
@@ -735,4 +737,6 @@ footer {
     display: inline-block;
     transform: translateY(100%); }
     .text-translate.animate {
-      animation: text-translate-anim .5s ease-in-out .1s forwards; } }
+      animation: text-translate-anim .5s ease-in-out .1s forwards; }
+      .text-translate.animate.d2 {
+        animation-delay: .5s; } }
