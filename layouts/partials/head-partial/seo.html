@@ -12,9 +12,8 @@
 {{ end }}
 
 <meta name="description" content="{{ $metaDescription }}">
-
 <meta name=" robots" content="index, follow"/>
-
+<meta name="application-name" content="{{ .Site.Title }}" />
 <meta itemprop="name" content="{{ .Site.Title }}" />
 <meta itemprop="image" content="https://nehemiatelusma.netlify.app/portfolio.webp" />
 
@@ -26,12 +25,11 @@
 <meta name="twitter:description" content="{{ .Site.Params.meta.seodescription }}" />
 <meta name="twitter:image" content="https://nehemiatelusma.netlify.app/portfolio.webp" />
 
-<meta name="application-name" content="{{ .Site.Title }}" />
 
 <meta property="og:title" content="{{ .Site.Title }}" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="" />
-<meta property="author" content="{{ .Site.Params.meta.seodescription }}" />
+<meta property="og:description" content="{{ .Site.Params.meta.seodescription }}" />
+<meta property="author" content="Nehémia Telusma" />
 <meta property="og:image" content="https://nehemiatelusma.netlify.app/portfolio.webp" />
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:url" content="https://nehemiatelusma.netlify.app/" />
