@@ -8,7 +8,7 @@ block = true
 title = true
 
 [params.meta]
-  description       = "Développeuse Front-End je partage ici avec vous quelques de mes réalisations."
+  seodescription       = "Développeuse Front-End je partage ici avec vous quelques une de mes réalisations."
   author            = "Nehémia Telusma"
   favicon           = true
 

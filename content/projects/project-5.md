@@ -1,6 +1,7 @@
 ---
 title: "Outil de prévention • Safe N Tech"
 subtitle: Création d'un outil de prévention
+description : "Je vous présente ici un projet de création de site web de prévention que j'ai réalisé dans le cadre d'un projet universitaire."
 date: 2023-02-27T11:45:02+01:00
 draft: false
 author: Nehémia Telusma

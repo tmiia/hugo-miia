@@ -1,7 +1,7 @@
 ---
 title: "Design intéractif • WEBIKE"
 subtitle: Refonte web
-description: ""
+description: "Je vous présente ici un projet de refonte d'une application mobile que j'ai réalisé dans le cadre d'un projet universitaire."
 date: 2023-02-26T01:16:47.071Z
 preview: ""
 draft: false

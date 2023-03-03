@@ -1,7 +1,7 @@
 ---
 title: "MNTN"
 subtitle: Site-web
-description: ""
+description: "Je vous présente ici une intégration web que j'ai réalisé dans le cadre de mon apprentisage personnel."
 date: 2023-02-05T02:16:47.071Z
 preview: ""
 draft: false

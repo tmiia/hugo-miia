@@ -3,6 +3,7 @@ title: "Baccanight • Çaravage"
 subtitle: Expérience intéractives
 date: 2023-02-27T16:05:22+01:00
 draft: false
+description: "Je vous présente ici un projet de jeux vidéo en JavaScript que j'ai réalisé dans le cadre d'un projet universitaire."
 author: Nehémia Telusma
 slug: "Çaravage"
 

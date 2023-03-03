@@ -1,7 +1,7 @@
 ---
 title: "Galerie • Immaculeé"
-subtitle: Refonte web
-description: ""
+subtitle: Site Web
+description: "Je vous présente ici un projet de création de site internet que j'ai réalisé dans le cadre d'un projet universitaire."
 date: 2023-02-26T02:16:47.071Z
 preview: ""
 draft: false
