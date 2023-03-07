@@ -82,7 +82,10 @@ a {
     .socials li a {
       margin: 0 1rem; }
       .socials li a img, .socials li a svg {
-        width: 1.2rem; }
+        width: 1.2rem;
+        transition: scale .3s ease-in-out; }
+        .socials li a img:hover, .socials li a svg:hover {
+          transform: scale(1.1); }
 
 .fil-ariane {
   font-weight: 600;
@@ -122,10 +125,10 @@ header {
   .hero-banner .left {
     flex: 2; }
     .hero-banner .left h1 {
-      font-size: 4rem;
+      font-size: calc(5000vw / 1018);
       font-weight: 600; }
     .hero-banner .left #colored-name {
-      font-size: 5rem;
+      font-size: calc(6000vw / 1018);
       font-weight: 700;
       text-transform: uppercase; }
       @supports (background-clip: text) or (-webkit-background-clip: text) {
@@ -173,12 +176,12 @@ header {
     flex-direction: column;
     margin-bottom: 0; }
     .hero-banner .left h1 {
-      font-size: 5rem; }
+      font-size: calc(10000vw / 1018); }
     .hero-banner .left #colored-name {
-      font-size: 7rem; }
+      font-size: calc(11000vw / 1018); }
     .hero-banner .left p {
-      font-size: 1.9rem;
-      line-height: 2.3rem; }
+      font-size: 1.5rem;
+      line-height: 2rem; }
     .hero-banner .right {
       display: flex;
       justify-content: center;
@@ -194,9 +197,9 @@ header {
     flex-direction: column;
     margin-bottom: 0; }
     .hero-banner .left h1 {
-      font-size: 3rem; }
+      font-size: calc(12000vw / 1018); }
     .hero-banner .left #colored-name {
-      font-size: 3.5rem; }
+      font-size: calc(12500vw / 1018); }
     .hero-banner .left p {
       font-size: 1.2rem;
       line-height: 1.6rem;
@@ -707,12 +710,12 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 1rem; }
 
-.text-effect:hover > span.text-move {
+.text-effect > span.text-move {
   display: inline-block;
-  transform: translateX(50%); }
-
-.text-effect .text-move {
   transition: transform .3s ease-in-out; }
+
+.text-effect:hover > span.text-move {
+  transform: translateX(50%); }
 
 .move-gradient {
   animation: moving-gradient 3s infinite alternate-reverse;

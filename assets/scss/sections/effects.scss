@@ -1,10 +1,10 @@
 .text-effect{
-  &:hover > span.text-move{
+  & > span.text-move{
     display: inline-block;
-    transform: translateX(50%);
-  }
-  .text-move{
     transition: transform .3s ease-in-out;
+  }
+  &:hover > span.text-move{
+    transform: translateX(50%);
   }
 }
 

@@ -3,11 +3,13 @@
   .left{
     flex: 2;
     h1{
-      font-size: 4rem;
+      font-size: calc(5000vw / 1018);
+      // font-size: 4rem;
       font-weight: 600;
     }
     #colored-name{
-      font-size: 5rem;
+      font-size: calc(6000vw / 1018);
+      // font-size: 5rem;
       font-weight: 700;
       text-transform: uppercase;
       @supports (background-clip:text) or (-webkit-background-clip:text) {
@@ -67,14 +69,14 @@
     margin-bottom: 0;
     .left{
       h1{
-        font-size: 5rem;
+        font-size: calc(10000vw / 1018);
       }
       #colored-name{
-        font-size: 7rem;
+        font-size: calc(11000vw / 1018);
       }
       p{
-        font-size: 1.9rem;
-        line-height: 2.3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
       }
     }
     .right{
@@ -99,10 +101,10 @@
     margin-bottom: 0;
     .left{
       h1{
-        font-size: 3rem;
+        font-size: calc(12000vw / 1018);
       }
       #colored-name{
-        font-size: 3.5rem;
+        font-size: calc(12500vw / 1018);
       }
       p{
         font-size: 1.2rem;
