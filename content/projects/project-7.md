@@ -17,6 +17,6 @@ links:
     site:
         type : site
         title: "Lien externe vers le site hébergé"
-        url: ""
+        url: "https://react-todolist-nehemia.netlify.app/"
 
 ---
