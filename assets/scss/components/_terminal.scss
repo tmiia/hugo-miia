@@ -1,0 +1,26 @@
+.terminal{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .current-line{
+    margin-top: 0.5rem;
+  }
+
+  p, span {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .typing-text{
+    display: none;
+
+    &.active{
+      display: inline;
+    }
+  }
+}
+
+.magnetic{
+  position: relative;
+  z-index: 20;
+}

@@ -1,7 +1,10 @@
   <link rel="canonical" href="https://nehemiatelusma.netlify.app/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://kit.fontawesome.com/5ab4441cb0.js" crossorigin="anonymous"></script>
+  {{ $js := resources.Get "javascript/app.js" | minify | fingerprint | js.Build }}
+  <script type="module" src="{{ $js.Permalink }}"></script>
   {{ $styles := resources.Get "/scss/main.scss" | toCSS }}
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="{{ $styles.Permalink }}">

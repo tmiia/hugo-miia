@@ -1,106 +1,36 @@
 <section class="cv">
-  <div class="cv__text-content">
-    <h3 class="cv__title"><span class="text-effect">HARD <span class="text-move">SKILLS.</span><br>
-      SOFT SKILLS.<br>
-     <span class="text-translate">HOBBIES.</span></span></h3>
-    <p><span id="text-effect-t2">Retrouvez ici les outils que j’utilise le plus régulièrement dans mes projets, mais aussi mes savoir-être qui me permettent de travailler en équipe. Et finalement, découvrez-en plus sur moi et mes centres d’intérêt.</span></p>
-  </div>
-  <div class="cv__carousel">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="cv__items">
-          <img src="/tools/js-blue.svg" alt="">
-          <div class="items__content">
-            <span>JavaScript</span>
-            <span>Il y'en a dans tous mes projets web, de la simple animation à la Web App.</span>
+  <div class="cv__content-container">
+    <div class="cv__text-content">
+      <h3 class="cv__title"><span class="text-effect">HARD <span class="text-move">SKILLS.</span><br>
+        SOFT SKILLS.<br>
+      <span class="text-translate">HOBBIES.</span></span></h3>
+      <p><span id="text-effect-t2">Retrouvez ici les outils que j’utilise le plus régulièrement dans mes projets, mais aussi mes savoir-être qui me permettent de travailler en équipe. Et finalement, découvrez-en plus sur moi et mes centres d’intérêt.</span></p>
+    </div>
+    <div class="cv__about-me">
+      <div class="window active interact-with">
+        <div class="window__header">
+          <div class="header__actions">
+            <div class="window__btn close"></div>
+            <div class="window__btn reduce"></div>
+            <div class="window__btn resize"></div>
           </div>
-      </div>
-      <div class="cv__items">
-          <img src="/tools/hugo-blue.svg" alt="">
-          <div class="items__content">
-            <span>Hugo</span>
-            <span>Mon portfolio est en HUGO, comme tous mes sites static !</span>
+          <div class="header__info">
+            <span>Terminal</span>
           </div>
-      </div>
-      <div class="cv__items">
-          <img src="/tools/tailwind-blue.svg" alt="">
-          <div class="items__content">
-            <span>Tailwind</span>
-            <span>Je l'utilise depuis peu, mais les va-et-vient de l'HTML au CSS ne me manque pas.</span>
-          </div>
-      </div>
-      <div class="cv__items">
-          <img src="/tools/scss.svg" alt="">
-          <div class="items__content">
-            <span>Scss</span>
-            <span>Partout, partout, j'en mets partout !</span>
-          </div>
-      </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="cv__items">
-          <img src="/tools/soft/equipe.svg" alt="">
-          <div class="items__content">
-            <span>Esprit d'équipe</span>
-            <span>Travailler en équipe c'est s'entraider, déléguer et partager nos connaissance !</span>
-          </div>
-      </div>
-      <div class="cv__items">
-          <img src="/tools/soft/sociable.svg" alt="">
-          <div class="items__content">
-            <span>Empathie</span>
-            <span>Une qualité que je trouve importante quand on intéragit avec d'autres personnes.</span>
-          </div>
-      </div>
-      <div class="cv__items">
-          <img src="/tools/soft/puzzle.svg" alt="">
-          <div class="items__content">
-            <span>Résolution de problèmes</span>
-            <span>C'est sans doûte cette appétence qui me fait tant aimer le dev !</span>
-          </div>
-      </div>
-      <div class="cv__items">
-          <img src="/tools/soft/curieux.svg" alt="">
-          <div class="items__content">
-            <span>Curiosité</span>
-            <span>C'est cette curiosité qui m'a fait découvrir l'HTML losque j'étais au collège.</span>
-          </div>
-      </div>
+        </div>
+        <div class="window__main">
+          <section class="terminal active">
+            <p>- hard_skills.pdf</p>
+            <p>- soft_skills.pdf</p>
+            <p>- hobbies.pdf</p>
+
+            <p class="current-line">miia@macmymiia: ~/Documents$ <span class="typing-text">open *.pdf</span><span class="cursor">█</span> </p>
+          </section>
+        </div>
+        <div class="window__instruction">
+          <span class="magnetic">Clique et tape sur ton clavier</span>
+        </div>
       </div>
     </div>
-    <div class="navigation">
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </div>
   </div>
 </section>
-
-<script>
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  grabCursor: true,
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: false,
-      translate: [0, 0, -400],
-      rotate: [0, 0, -10],
-    },
-    next: {
-      translate: ["100%", 0, 0],
-      rotate: [0, 0, 10],
-    },
-  },
-  direction: 'horizontal',
-  loop: false,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
-</script>

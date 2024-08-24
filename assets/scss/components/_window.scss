@@ -1,0 +1,107 @@
+.window{
+  position: relative;
+  height: 100%;
+  border-radius: $radius;
+  // border: 1px solid $dark-blue;
+  transition: .4s ease-in-out;
+
+  &.interact-with{
+    cursor: pointer;
+    &:hover{
+      // border-color: $white-teint;
+      .window__instruction{
+        display: flex;
+      }
+    }
+  }
+
+  &.focus{
+    .window__instruction{
+      display: none;
+    }
+  }
+
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    background-color: $darkest-blue;
+    border-radius: $radius $radius 0 0;
+
+    .header__actions{
+      display: flex;
+      gap: 0.5rem;
+      margin-right: auto;
+
+      .window__btn{
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        background-color: black;
+
+        &.interactive{
+          cursor: pointer;
+        }
+
+        &.close{
+          background-color: $red;
+        }
+        &.reduce{
+          background-color: $grey;
+        }
+        &.resize{
+          background-color: $green;
+        }
+      }
+    }
+
+    .header__info {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      span {
+        display: block;
+        font-family: $text-font;
+        font-size: 14px;
+        color: $white-teint;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__main{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #44454a4a;
+    border-radius: 0 0 $radius $radius;
+    padding: 0.75rem 0.5rem;
+    color: $white-teint;
+    min-height: calc(100% - 1rem - 14px - 1.5rem);
+  }
+
+  &__instruction{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    border-radius: inherit;
+    display: none;
+    transition: all .3s ease-in-out;
+
+    p, span{
+      display: block;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      width: 20ch;
+
+    }
+  }
+}
