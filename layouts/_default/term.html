@@ -13,6 +13,7 @@
     {{ end }}
   {{ end }}
 </ul>
+<div class="projects__container">
   <ul class="projects">
     {{ range (.Pages.ByDate).Reverse }}
     <div class="project__card" style="background-image: url('{{ .Params.Cover.url }}')">
@@ -21,4 +22,5 @@
     </div>
     {{ end }}
   </ul>
+</div>
 {{ end}}

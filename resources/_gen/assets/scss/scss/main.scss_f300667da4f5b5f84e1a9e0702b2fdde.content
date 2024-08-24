@@ -361,10 +361,22 @@ header {
     text-align: center;
     text-transform: uppercase; }
 
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem; }
+  .projects__container .btn-see-all {
+    align-self: flex-end;
+    font-size: 14px;
+    color: rgba(116, 214, 245, 0.76);
+    transition: .3s ease-in-out; }
+    .projects__container .btn-see-all:hover {
+      transform: scale(1.05); }
+
 .projects {
   display: flex;
-  justify-content: space-between;
-  margin-top: 3rem; }
+  justify-content: space-between; }
   .projects .project__card {
     position: relative;
     flex: 1;
