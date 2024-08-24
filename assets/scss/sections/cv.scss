@@ -20,7 +20,7 @@
       font-weight: 900;
     }
     p{
-      width: 50ch;
+      max-width: 50ch;
       margin-top: 1.2rem;
       opacity: 0.8;
       font-size: 1.2rem;
@@ -60,7 +60,7 @@
           font-family: $text-mono;
         }
         & > *{
-          width: 45ch;
+          max-width: 45ch;
         }
       }
     }
@@ -72,7 +72,6 @@
  .cv{
    align-items: center;
    padding: 6rem 0;
-   // background-color: red;
 
    &__content-container{
     flex-direction: row;
@@ -92,10 +91,17 @@
  .cv{
   flex-direction: column;
   padding: 4rem 0;
+
+  &__content-container{
+    flex-direction: column;
+  }
+
   &__text-content{
     flex: 1.5;
     margin-bottom: 2rem;
     width: 100%;
+    height: fit-content;
+    
     h3{
       text-transform: uppercase;
       line-height: 40px;
@@ -110,16 +116,10 @@
       width: 100%;
     }
   }
-  &__carousel{
-    width: 100%;
-    .swiper{
-      .swiper-slide{
-        padding: 2rem 0;
-        .cv__items{
-          min-width: calc(100% - 2rem);
-        }
-      }
-    }
+  &__about-me{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
  }
 }

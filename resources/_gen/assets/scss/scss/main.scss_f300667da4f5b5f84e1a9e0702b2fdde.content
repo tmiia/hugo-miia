@@ -269,7 +269,7 @@ header {
       font-size: 4rem;
       font-weight: 900; }
     .cv__text-content p {
-      width: 50ch;
+      max-width: 50ch;
       margin-top: 1.2rem;
       opacity: 0.8;
       font-size: 1.2rem;
@@ -296,7 +296,7 @@ header {
         .cv__about-me .cv__items .items__content p, .cv__about-me .cv__items .items__content span {
           font-family: "Courier New", Courier, monospace; }
         .cv__about-me .cv__items .items__content > * {
-          width: 45ch; }
+          max-width: 45ch; }
 
 @media only screen and (min-width: 960px) {
   .cv {
@@ -313,10 +313,13 @@ header {
   .cv {
     flex-direction: column;
     padding: 4rem 0; }
+    .cv__content-container {
+      flex-direction: column; }
     .cv__text-content {
       flex: 1.5;
       margin-bottom: 2rem;
-      width: 100%; }
+      width: 100%;
+      height: fit-content; }
       .cv__text-content h3 {
         text-transform: uppercase;
         line-height: 40px;
@@ -327,12 +330,10 @@ header {
         font-size: 1.2rem;
         line-height: 24px;
         width: 100%; }
-    .cv__carousel {
-      width: 100%; }
-      .cv__carousel .swiper .swiper-slide {
-        padding: 2rem 0; }
-        .cv__carousel .swiper .swiper-slide .cv__items {
-          min-width: calc(100% - 2rem); } }
+    .cv__about-me {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; } }
 
 .card {
   position: relative;
@@ -794,7 +795,9 @@ footer {
       display: block;
       font-family: 'Courier New', Courier, monospace;
       text-align: center;
-      width: 20ch; }
+      max-width: 20ch; }
+
+@media only screen and (min-width: 960px) {
   .window.floating {
     position: absolute;
     opacity: 0;
@@ -821,7 +824,11 @@ footer {
       top: -2rem;
       left: 2rem; }
     .window.floating.fist-plan {
-      z-index: 1000; }
+      z-index: 1000; } }
+
+@media only screen and (max-width: 950px) {
+  .window.interact-with {
+    display: none; } }
 
 .cursor {
   display: none; }
