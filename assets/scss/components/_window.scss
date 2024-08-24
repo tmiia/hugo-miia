@@ -1,9 +1,13 @@
 .window{
   position: relative;
   height: 100%;
+  width: 100%;
   border-radius: $radius;
-  // border: 1px solid $dark-blue;
   transition: .4s ease-in-out;
+
+  &:hover{
+    transform: scale(1.025);
+  }
 
   &.interact-with{
     cursor: pointer;
@@ -102,6 +106,51 @@
       text-align: center;
       width: 20ch;
 
+    }
+  }
+
+  &.floating{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    .window__main{
+      background-color: #232a40af;
+      border: 1px solid $dark-blue;
+      backdrop-filter: blur(2px);
+    }
+
+    &:hover{
+      .window__main{
+        background-color: #232a40e7;
+      }
+    }
+
+    &.close{
+      display: none;
+    }
+
+    &:nth-of-type(2) {
+      z-index: 900;
+      top: 6rem;
+      left: -3rem;
+    }
+
+    &:nth-of-type(3) {
+      z-index: 800;
+      top: 2rem;
+      left: 6rem;
+    }
+
+    &:nth-of-type(4) {
+      z-index: 700;
+      top: -2rem;
+      left: 2rem;
+    }
+
+    &.fist-plan{
+      z-index: 1000;
     }
   }
 }

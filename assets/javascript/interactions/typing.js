@@ -1,6 +1,9 @@
+import Win from './window';
+
 const Typing = {
   sections: document.querySelectorAll('.window'),
   currentSect: document.querySelector('.window.active'),
+  keydownHandler: null,
 
   init(){
     this.sections.forEach(sect => {
@@ -9,34 +12,42 @@ const Typing = {
         sect.addEventListener('click', ()=>{
           sect.classList.remove('interact-with');
           sect.classList.add('focus');
-          this.typingInteraction()
-        })
+          this.typingInteraction();
+        });
       }
     });
   },
 
   typingInteraction(){
     let typingText = this.currentSect.querySelector('.typing-text'),
-          finalText = "",
-          typingLetterIndex = 0,
-          isTypingComplete = false;
+        finalText = "",
+        typingLetterIndex = 0,
+        isTypingComplete = false;
 
-    document.addEventListener('keydown', ()=>{
+    this.keydownHandler = () => {
       if (!typingText.classList.contains('active')) {
         finalText = typingText.innerText;
         typingText.innerText = '';
         typingText.classList.add('active');
         typingLetterIndex = 0;
         isTypingComplete = false;
-    }
+      }
 
-    if (typingLetterIndex < finalText.length) {
+      if (typingLetterIndex < finalText.length) {
         typingText.innerText += finalText[typingLetterIndex];
         typingLetterIndex++;
-    } else {
+      } else {
         isTypingComplete = true;
-    }
-    })
+        document.removeEventListener('keydown', this.keydownHandler);
+
+        const floatingWin = document.querySelectorAll('.window.floating');
+        floatingWin.forEach(win => {
+          Win.openWin(win);
+        });
+      }
+    };
+
+    document.addEventListener('keydown', this.keydownHandler);
   }
 };
 
